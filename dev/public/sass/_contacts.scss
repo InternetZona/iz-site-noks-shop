@@ -1,0 +1,93 @@
+.map {
+  height: 500px;
+
+  &--wrapper {
+
+    + .map--wrapper {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.contacts {
+  &-area {
+
+    @media #{$small-and-down} {
+      padding-top: 1rem;
+    }
+
+    .button{
+      height: 40px;
+      line-height: 36px;
+    }
+
+    .block__title {
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+
+    > ul {
+      margin: 0;
+
+      > li {
+        line-height: 25px;
+      }
+    }
+
+    .phones {
+      .phone {
+        a{
+          color: $off-black;
+          font-size: 15px;
+        }
+        span {
+          color: #848080;
+          font-size: 13px;
+          display: inline-block;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    .messengers {
+      .phone {
+
+        a{
+          color: $off-black;
+          font-size: 15px;
+        }
+         span {
+           display: inline-block;
+           font-size: 1.8rem;
+           margin-left: 2rem;
+         }
+      }
+      .app {
+        font-size: 13px;
+        color: $primary-color;
+
+        span {
+          display: inline-block;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+  }
+}
+
+.owner-summary {
+  margin-top: .5rem;
+
+  li {
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+
+.contact__title {
+  font-weight: bold;
+  line-height: 22px;
+  font-size: 16px;
+}

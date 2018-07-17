@@ -1,0 +1,42 @@
+.block{
+  &-free,
+  &-featured,
+  &-steps,
+  &-helps,
+  &-solutions,
+  &-blog,
+  &-portfolio,
+  &-request,
+  &-catalog,
+  &-testimonials{
+    padding-top: 0;
+    .row{
+      margin-bottom: 0;
+    }
+  }
+
+  &-free,
+  &-featured{
+    .col {
+      @media #{$medium-and-down}{
+        margin-bottom: 10px;
+        margin-right: auto;
+        max-width: ($small-screen-up - 2) / 2;
+      }
+    }
+  }
+
+  &-steps{
+    padding-top: 30px;
+    .col {
+      @media #{$medium-and-down}{
+        margin-right: auto;
+        max-width: ($small-screen-up - 2) / 2;
+      }
+    }
+  }
+
+  &-sales{
+    padding-top: 30px;
+  }
+}

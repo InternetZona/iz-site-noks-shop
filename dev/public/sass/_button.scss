@@ -1,0 +1,48 @@
+.button-action {
+  @extend .btn;
+  @extend .z-depth-0;
+  font-size: .85rem;
+  text-transform: none;
+  height: 39px;
+  line-height: 39px;
+  background-color: $primary-color;
+  border-radius: 0;
+  width: 100%;
+  
+  @media (min-width: $medium-screen-up) and (max-width: $large-screen) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.button{
+  @extend .btn-flat;
+  @extend .btn-small;
+
+  font-size: .85rem;
+  color: $primary-color;
+  font-weight: bold;
+  border: 2px solid $primary-color;
+  text-transform: none;
+  opacity: 1;
+  height: 30px;
+  line-height: 26px;
+  padding: 0 30px;
+  border-radius: 0;
+  box-shadow: none!important;
+
+  &:hover,
+  &:focus{
+    background: $primary-color;
+    color: white;
+    opacity: .9;
+  }
+}
+
+.button-reset {
+  @extend .button-action;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 5px;
+}

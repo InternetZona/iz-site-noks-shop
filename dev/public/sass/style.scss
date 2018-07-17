@@ -1,0 +1,81 @@
+/**
+ * Main style file
+ */
+
+//Fonts
+$font-stack: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif !default;
+
+$h1-fontsize: 26px !default;
+$h2-fontsize: 23px !default;
+$h3-fontsize: 21px !default;
+$h4-fontsize: 19px !default;
+$h5-fontsize: 17px !default;
+$h6-fontsize: 15px !default;
+// Custom colors
+$primary-color: #2263a5;
+$secondary-color: #cb112c;
+$color-grey-10: #f1f1f1;
+$color-grey-15: #e9e9e9;
+$color-grey-20: #848181;
+$color-grey-25: #dcdcdc;
+$color-grey-30: #2d2d2d;
+$color-grey-35: #c3c3c3;
+
+$color-light-blue: #c9defb;
+$color-light-blue-10: #eff3f4;
+
+$new-color: #00c0cd;
+$top-color: #b05226;
+
+$gutter-width: 2rem !default;
+// Media Query Ranges
+$small-screen-up: 768px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1171px !default;
+$small-screen: 767px !default;
+$medium-screen: 992px !default;
+$large-screen: 1170px !default;
+
+$footer-font-color: $color-grey-20 !default;
+$footer-bg-color: $color-grey-10 !default;
+$footer-copyright-font-color: $footer-font-color !default;
+$footer-copyright-bg-color: $footer-bg-color!default;
+
+$navbar-height: 49px !default;
+$navbar-height-mobile: $navbar-height !default;
+
+
+.grey-bg {
+  background: #f8f6f7;
+}
+
+$pswp__assets-path: '../img/gallery/' !default;
+
+@import "../../../node_modules/photoswipe/src/css/main";
+@import "../../../node_modules/photoswipe/src/css/default-skin/default-skin";
+@import "../../../node_modules/plyr/src/sass/plyr.scss";
+
+@import '../../../node_modules/materialize-css/sass/materialize';
+
+@import "helpers";
+@import "navbar";
+@import "page";
+@import "header";
+@import "footer";
+@import "bar";
+@import "cart";
+@import "favorite";
+@import "topbar";
+@import "button";
+@import "icon";
+@import "swipper";
+@import "stepper";
+@import "box";
+@import "block";
+@import "form";
+@import "portfolio";
+@import "modal";
+@import "product";
+@import "filter";
+@import "contacts";
+@import "alert";

@@ -1,0 +1,14 @@
+.footer{
+  @extend .page-footer;
+
+  .call-phone {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #848181;
+  }
+
+  &__copyright{
+    @extend .footer-copyright;
+  }
+}

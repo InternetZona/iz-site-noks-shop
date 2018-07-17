@@ -1,0 +1,31 @@
+.page{
+  &--footer-sticky{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .main{
+      flex: 1 0 auto;
+    }
+
+    h1{
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &--product {
+    h1 {
+      color: $primary-color;
+      margin-bottom: 1.4rem;
+    }
+  }
+}
+
+.section {
+  .section {
+    padding-bottom: 0;
+  }
+}

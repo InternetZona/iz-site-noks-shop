@@ -1,0 +1,18 @@
+.icon{
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  bottom: -5px;
+
+  &--ruler{
+    background: url("../img/ruler.png") no-repeat center center;
+  }
+  &--project{
+    background: url("../img/project.png") no-repeat center center;
+  }
+  &--pensil{
+    background: no-repeat center center;
+  }
+}
