@@ -1,17 +1,43 @@
+{$object.id = $data.id}
+{$object.pagetitle = $data.pagetitle}
+{$object.uri = $data.uri}
+{$object.tvs.price = $data.tvs.price}
+{$object.tvs.price_discount = $data.tvs.price_discount}
+{$object.tvs.issale = $data.tvs.issale}
+{$object.tvs.images = $data.tvs.images}
+
 <div class="card box-product">
     <div class="card-image">
 
         {$tvImages = $object.tvs.images.value|json_decode:true}
 
         {snippet name="pThumb" params=[
-            "input" => $tvImages[0].image
-            ,"options" => "&w=360&h=225&zc=1&aoe=0&far=0&q=80"
+        "input" => $tvImages[0].image
+        ,"options" => "&w=360&h=225&zc=1&aoe=0&far=0&q=80"
         ] assign=thumbImage}
 
         <a href="{$object.uri}"><img src="{$thumbImage}"></a>
 
-        {include file="components/product/panel.reveal.tpl" object=$object}
+        {$_li = ''}
+        {if $styleValue = $modx->getObject('catalogFilterValue', $object.tvs.style.value)}
+            {$_li = $_li|cat:"<li>Стиль: {$styleValue->name}</li>"}
+        {/if}
 
+        {if $colorValue = $modx->getObject('catalogFilterValue', $object.tvs.colour.value)}
+            {$_li = $_li|cat:"<li>Цвет: {$colorValue->name}</li>"}
+        {/if}
+
+        {if $materialValue = $modx->getObject('catalogFilterValue', $object.tvs.material.value)}
+            {$_li = $_li|cat:"<li>Материал: {$materialValue->name}</li>"}
+        {/if}
+
+        {if $_li ne ''}
+            <div class="product__params-reveal">
+                <ul class="product__params">
+                    {$_li}
+                </ul>
+            </div>
+        {/if}
     </div>
     <div class="card-content">
         <a href="{$object.uri}" class="card-title">
@@ -31,7 +57,7 @@
                             {$discount|number_format:0:'.':' '}
                         </span>
                     </div>
-                    {else}
+                {else}
                     <span class="product__cost">
                         {$object.tvs.price.value|number_format:0:'.':' '}
                     </span>

@@ -59,6 +59,7 @@
 
         <div class="row">
             {foreach $result.object as $object}
+
                 <div class="col s12 m6 l4">
                     {include file="components/product/item.tpl" object=$object}
                 </div>
@@ -75,13 +76,8 @@
         </div>
     </div>
     <div class="container">
-        {include file="blocks/steps.inner.tpl"}
-        {include file="blocks/request.tpl"}
-        {include file="blocks/recomendation.tpl"}
         {include file="blocks/blog.tpl"}
         {include file="blocks/testimonials.tpl"}
-        {include file="blocks/portfolio.tpl"}
-        {include file="blocks/helps.tpl"}
         {include file="blocks/request.tpl"}
     </div>
 {/block}

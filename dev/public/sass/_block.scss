@@ -8,10 +8,18 @@
   &-portfolio,
   &-request,
   &-catalog,
-  &-testimonials{
+  &-testimonials,
+  &-recomendation,
+  &-showroom{
     padding-top: 0;
+
     .row{
       margin-bottom: 0;
+    }
+
+    &.section {
+      padding-top: 30px;
+      padding-bottom: 0;
     }
   }
 
@@ -39,4 +47,8 @@
   &-sales{
     padding-top: 30px;
   }
+}
+
+.block-request {
+  padding-bottom: 30px!important;
 }

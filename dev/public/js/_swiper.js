@@ -19,8 +19,10 @@ import Swiper from 'swiper';
 
     } else if (
       elem.id === 'swiper-blog' ||
+      elem.id === 'swiper-event' ||
       elem.id === 'swiper-testimonials' ||
       elem.id === 'swiper-related' ||
+      elem.id === 'swiper-buys' ||
       elem.id === 'swiper-feed'
     ) {
       setTimeout(new Swiper('#' + elem.id, {
@@ -71,7 +73,8 @@ import Swiper from 'swiper';
     } else if (
       elem.id === 'swiper-sales' ||
       elem.id === 'swiper-semi' ||
-      elem.id == 'swiper-recomendation'
+      elem.id === 'swiper-showroom' ||
+      elem.id === 'swiper-recomendation'
     ) {
       setTimeout(new Swiper('#' + elem.id, {
         autoplay: false,

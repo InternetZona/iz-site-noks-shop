@@ -1,6 +1,6 @@
-{if $productType = $modx->getObject('catalogProductType', [
-    'seo_template_id'   => {field name=template}
-])}
+{$where = ({field name=template} == 25) ? ['id'=>{tv name=productType}] : ['seo_template_id'=>{field name=template}]}
+
+{if $productType = $modx->getObject('catalogProductType', $where)}
 
     {assign var=params value=[
         'parent'    => 21
@@ -36,6 +36,9 @@
 
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                </div>
+                <div class="center-align">
+                    <a href="{$modx->makeUrl(752)}" class="button-action" style="width:auto">Все предложения</a>
                 </div>
             </div>
         </div>

@@ -7,11 +7,11 @@
             </div>
             <div class="col s12 m6 l3">
                 {include file="components/menu/index.tpl" title="Каталоги" ids="24, 274, 280, 286, 290, 295" parent="23"}
-                {include file="components/menu/index.tpl" title="Акции и спецпредложения" ids="38" parent="0"}
+                {include file="components/menu/index.tpl" title="Акции и спецпредложения" ids="38, 752, 753" parent="0"}
             </div>
             <div class="col s12 m6 l3">
-                {include file="components/menu/index.tpl" title="О нас" ids="6, 18, 17, 19" parent="0"}
-                {include file="components/menu/index.tpl" title="Сотрудничество" ids="222" parent="0"}
+                {include file="components/menu/index.tpl" title="О нас" ids="6, 18, 17, 19, 17" parent="0" showhidden=1}
+                {include file="components/menu/index.tpl" title="Сотрудничество" ids="222, 223" parent="0"}
             </div>
             <div class="col s12 m6 l3">
                 <div class="menu__title">Связаться с нами</div>

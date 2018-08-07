@@ -57,12 +57,6 @@
         {/if}
         <li class="filter__item">
 
-            {include file="components/filter/range.tpl"}
-
-            <label class="filter__label">Цена</label>
-        </li>
-        <li class="filter__item">
-
             {$url = ({field name=parent} != 23) ? $modx->makeUrl({field name=parent}) : $modx->makeUrl({field name=id}) }
 
             <a href="{$url}" class="button-reset" onclick="yaCounter49093180.reachGoal('filtr');">Сбросить фильтр</a>

@@ -1,6 +1,6 @@
-{if $productType = $modx->getObject('catalogProductType', [
-    'seo_template_id'   => {field name=template}
-])}
+{$where = ({field name=template} == 25) ? ['id'=>{tv name=productType}] : ['seo_template_id'=>{field name=template}]}
+
+{if $productType = $modx->getObject('catalogProductType', $where)}
 
     {assign var=params value=[
         'parent'    => 21
@@ -17,7 +17,7 @@
     {processor action="web/catalog/getdata" ns='modcatalog' params=$params assign=result}
 
     {if $result.success && $result.count > 0}
-        <div class="block-recomendation">
+        <div class="section block-recomendation">
             <div class="section__title">
                 Лидеры продаж
             </div>

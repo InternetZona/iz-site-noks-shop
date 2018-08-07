@@ -14,17 +14,17 @@
 
         {block name=catalogParams}
             {$params=[
-                'parent'    => 21
-                ,'where'    => [
-                    'template' => $productType->template_id
-                ]
-                ,'sort' => 'publishedon'
-                ,'dir'  => 'desc'
-                ,'limit'    => $limit
-                ,'filter' => $smarty.get.filter
-                ,'sorting'  => $smarty.get.sorting|default:false
-                ,'getPage'  => true
-                ,'page'     => $smarty.get.page|default:1
+            'parent'    => 21
+            ,'where'    => [
+                'template' => $productType->template_id
+            ]
+            ,'filter' => $smarty.get.filter
+            ,'sort' => 'publishedon'
+            ,'dir'  => 'desc'
+            ,'limit'    => $limit
+            ,'sorting'  => $smarty.get.sorting|default:false
+            ,'getPage'  => true
+            ,'page'     => $smarty.get.page|default:1
             ]}
         {/block}
 
@@ -34,24 +34,38 @@
             <form id="desktop-controller" class="form form-catalog-controller" data-catalog="21" data-tpl="{$productType->template_id}">
                 <input type="hidden" name="limit" value="{$limit}">
 
-                {$c = $modx->newQuery('catalogProductFilter')}
-                {$c->sortby('filter_id', 'ASC')}
+                <div class="filter-wrapper">
+                    <ul class="filter-portfolio" style="margin:0;">
 
-                {if in_array({tv name=productType}, [2, 3])}
-                    {$c->where([
-                    'filter_id:!=' => 6
-                    ])}
-                {/if}
+                        <li class="filter__item">
+                            <select name="filter[productType]" class="filter__control">
+                                <option value="0" selected>Все</option>
 
-                {if in_array({tv name=productType}, [4])}
-                    {$c->where([
-                    'filter_id:!=' => 9
-                    ])}
-                {/if}
+                                {if $productTypes = $modx->getCollection('catalogProductType')}
+                                    {foreach $productTypes as $data}
 
-                {if $productFilters = $productType->getMany('ProductTypeFilters', $c)}
-                    {include file="components/filter/index.tpl" productFilters=$productFilters}
-                {/if}
+                                        {if $smarty.get.filter.productType == $data->id}
+
+                                            <option value="{$data->id}" selected>{$data->name}</option>
+
+                                        {else}
+                                            <option value="{$data->id}">{$data->name}</option>
+                                        {/if}
+
+                                    {/foreach}
+                                {/if}
+
+                            </select>
+                            <label class="filter__label">Вид товара</label>
+                        </li>
+
+                        <li class="filter__item">
+                            <a href="{$url}" class="button-reset" onclick="yaCounter49093180.reachGoal('filtr');">Сбросить фильтр</a>
+                        </li>
+
+                    </ul>
+                </div>
+
                 <div class="sorting--wrapper">
                     <div class="row row--grid">
                         <div class="col m6 valign-wrapper">
@@ -96,12 +110,6 @@
             </div>
         </div>
 
-        {if in_array({tv name=productType}, [1,2,3]) AND ($smarty.get.filter.itemMaterial == 2 OR {tv name=itemMaterial} == 2) }
-
-            {include file="components/alert/danger.tpl" text="Все представленные модели возможно исполнить в любом желаемом цвете"}
-
-        {/if}
-
         {if $result.success && $result.count > 0}
 
             {$paging = false}
@@ -109,7 +117,7 @@
 
             {if $page > 1}
                 {$paging = ($result.total > ($limit * $page)) ? 'true' : 'false'}
-                {elseif $page}
+            {elseif $page}
                 {$paging = ($result.total > $limit) ? 'true' : 'false'}
             {/if}
 
@@ -118,10 +126,11 @@
                     <div class="col s12 m6 l4">
                         {include file="components/product/item.tpl" object=$object}
                     </div>
+
                 {/foreach}
             </div>
 
-            [[+page.nav:notempty=`<div class="center-align"><a href="#" class="catalog-infinity btn" data-page="{$smarty.get.page|default:1}">Показать еще <i class="fas fa-sync fa-fw"></i></a></div>`]]
+
 
         {/if}
 
@@ -129,14 +138,7 @@
 {/block}
 
 {block name=aside}
-    <div class="grey-bg" style="padding-bottom: 30px;">
-        <div class="container">
-            {include file="blocks/sales.inner.tpl"}
-        </div>
-    </div>
     <div class="container">
-        {include file="blocks/recomendation.inner.tpl"}
-        {include file="blocks/showroom.inner.tpl" productTypeId={tv name=productType}}
         {include file="blocks/events.tpl"}
         {include file="blocks/testimonials.tpl"}
         {include file="blocks/request.tpl"}

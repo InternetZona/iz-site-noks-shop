@@ -1,30 +1,29 @@
+{$data = explode('||', $tv)}
+
 {assign var=params value=[
-    'parent'    => 21
-    ,'where'    => [
-        'template:!='   => 52
-    ]
-    ,'limit'    => 10
-    ,'filter'    => [
-        'issale'    => 1
-    ]
-    ,'dir'      => 'RAND()'
+'where' => [
+'id:IN' => $data
+]
+,'sort' => 'publishedon'
+,'dir'  => 'desc'
+,'limit'    => 0
 ]}
 
 {processor action="web/catalog/getdata" ns='modcatalog' params=$params assign=result}
 
 {if $result.success && $result.count > 0}
-    <div class="block-sales">
+    <div class="block-buys">
         <div class="section__title">
-            Предложение месяца
+            {$title|default:"С этим товаром часто покупают"}
         </div>
         <div class="section__content">
 
-            <div id="swiper-sales" class="swiper-container swiper-content">
+            <div id="swiper-buys" class="swiper-container swiper-content">
                 <div class="swiper-wrapper">
 
                     {foreach $result.object as $object}
                         <div class="swiper-slide">
-                            {include file="components/product/item.tpl" object=$object}
+                            {include file="components/product/item.light.tpl" object=$object}
                         </div>
                     {/foreach}
 
@@ -32,10 +31,6 @@
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="center-align">
-                <a href="{$modx->makeUrl(752)}" class="button-action" style="width:auto">Все предложения</a>
             </div>
         </div>
     </div>

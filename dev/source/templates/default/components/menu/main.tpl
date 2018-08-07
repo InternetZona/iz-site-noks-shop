@@ -69,9 +69,9 @@
                     {/if}
 
                     {if {field name=id} == 24}
-                        <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                        <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                     {else}
-                        <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                        <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                     {/if}
 
                     {if {field name=id} == 24}
@@ -129,9 +129,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {/if}
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=2')}" style="margin-bottom: 0;">Портфолио</a>
@@ -190,9 +190,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {/if}
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=3')}" style="margin-bottom: 0;">Портфолио</a>
@@ -280,9 +280,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemSize" title="Популярные размеры" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {/if}
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=4')}" style="margin-bottom: 0;">Портфолио</a>
@@ -339,9 +339,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {/if}
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=5')}" style="margin-bottom: 0;">Портфолио</a>
@@ -399,9 +399,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemGender" title="Для кого" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 0;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
                         {/if}
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=6')}" style="margin-bottom: 0;">Портфолио</a>

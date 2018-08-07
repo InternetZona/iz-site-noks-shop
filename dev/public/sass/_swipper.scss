@@ -643,12 +643,14 @@ button.swiper-pagination-bullet {
 }
 
 #swiper-blog,
+#swiper-event,
 #swiper-portfolio,
 #swiper-testimonials,
 #swiper-sales,
 #swiper-related,
 #swiper-semi,
-#swiper-recomendation{
+#swiper-recomendation,
+#swiper-showroom{
   padding-top: 35px;
   top: -5px;
 
@@ -758,9 +760,16 @@ button.swiper-pagination-bullet {
 .swiper-container {
   .swiper-slide{
     .box-product {
+      margin-bottom: 0;
+
       @media #{$small-and-down} {
         margin: 1rem;
       }
+    }
+
+    .box-blog,
+    .box-item{
+      margin-bottom: 0;
     }
   }
 }

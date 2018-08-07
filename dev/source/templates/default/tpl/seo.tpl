@@ -39,6 +39,18 @@
                 {$c = $modx->newQuery('catalogProductFilter')}
                 {$c->sortby('filter_id', 'ASC')}
 
+                {if in_array({field name=template}, [34, 36])}
+                    {$c->where([
+                    'filter_id:!=' => 6
+                    ])}
+                {/if}
+
+                {if in_array({field name=template}, [38])}
+                    {$c->where([
+                    'filter_id:!=' => 9
+                    ])}
+                {/if}
+
                 {if $productFilters = $productType->getMany('ProductTypeFilters', $c)}
                     {include file="components/filter/index.tpl" productFilters=$productFilters}
                 {/if}
@@ -119,13 +131,15 @@
 {/block}
 
 {block name=aside}
-    <div class="grey-bg">
+    <div class="grey-bg" style="padding-bottom: 30px;">
         <div class="container">
             {include file="blocks/sales.inner.tpl"}
         </div>
     </div>
     <div class="container">
-        {include file="blocks/blog.tpl"}
+        {include file="blocks/recomendation.inner.tpl"}
+        {include file="blocks/showroom.inner.tpl" productTypeId=$productType->id}
+        {include file="blocks/events.tpl"}
         {include file="blocks/testimonials.tpl"}
         {include file="blocks/request.tpl"}
     </div>

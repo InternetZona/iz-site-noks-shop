@@ -71,13 +71,35 @@
     <div class="header__content hide-on-small-and-down">
         <div class="container">
             <div class="row row--grid">
-                <div class="col m6 l5 valign-wrapper">
+                <div class="col l4 valign-wrapper">
                     {include file="components/logo/index.tpl" image="logo-big.png"}
                 </div>
-
-                <div class="col m6 l7 valign-wrapper right-align">
+                <div class="col offset-m1 m3 l5 xl4 valign-wrapper">
+                    <ul class="header__action">
+                        <li class="header__action-item">
+                            <a href="#modal-order-visit" class="button-action modal-trigger" onclick="yaCounter49093180.reachGoal('zamer');">
+                                <i class="icon icon--ruler"></i>
+                                Заказать замер</a>
+                        </li>
+                        <li class="header__action-item">
+                            <a href="#modal-order-project" class="button-action modal-trigger" onclick="yaCounter49093180.reachGoal('proekt');">
+                                <i class="icon icon--project"></i>
+                                Заказать проект</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col m3 xl2 right-align valign-wrapper">
+                    <ul class="header__contacts">
+                        <li class="header__contacts-time">
+                            Пн.-Пт. 9:00-18:00
+                        </li>
+                        <li>
+                            <a class="header__contacts-phone" href="tel:84952088802">8 (495) 208-88-02</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col hide-on-med-and-down hide-on-large-only show-on-extra-large xl2 valign-wrapper right-align">
                     <ul class="header__link">
-                        <li><a class="header__contacts-phone" href="tel:84952088802">8 (495) 208-88-02</a></li>
                         <li>
                             <a href="#modal-callback" class="header__link-item modal-trigger" onclick="yaCounter49093180.reachGoal('call');">Заказать звонок</a>
                         </li>

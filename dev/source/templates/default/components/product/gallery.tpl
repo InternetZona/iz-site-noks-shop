@@ -1,5 +1,3 @@
-{$tvData = {tv name=images}|json_decode:true}
-
 {if $tvData && is_array($tvData)}
 
     <div class="product-gallery">

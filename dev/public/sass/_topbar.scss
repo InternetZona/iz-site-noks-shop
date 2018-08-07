@@ -22,12 +22,12 @@
     }
 
     &:not(:first-child) {
-      padding-left: 36px;
+      padding-left: 18px;
 
       &:before {
         content: "";
         position: absolute;
-        left: 16px;
+        left: 8px;
         top: 50%;
         margin-top: -2px;
         width: 4px;

@@ -1,5 +1,8 @@
 {assign var=params value=[
     'parent'    => 21
+    ,'where'    => [
+        'template:!='   => 52
+    ]
     ,'filter'    => [
         'ishit'    => 1
     ]
@@ -10,7 +13,7 @@
 {processor action="web/catalog/getdata" ns='modcatalog' params=$params assign=result}
 
 {if $result.success && $result.count > 0}
-    <div class="block-recomendation">
+    <div class="section block-recomendation">
         <div class="section__title">
             Лидеры продаж
         </div>
