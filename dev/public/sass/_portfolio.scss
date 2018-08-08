@@ -1,0 +1,110 @@
+.portfolio,
+.catalog,
+.fasade {
+  &-feed{
+    margin-bottom: 2rem;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 0;
+      margin-top: 0;
+      height: 25px;
+      outline: 0;
+      background-size: contain;
+    }
+    .swiper-button-prev{
+      right: 0;
+      margin-right: 20px;
+      left: auto;
+    }
+    .swiper-button-next{
+      right: 0;
+    }
+
+    figure{
+      margin: 0;
+
+      figcaption {
+        font-size: .85rem;
+      }
+    }
+
+    &__title {
+      @extend h6;
+      color: $primary-color;
+      font-weight: bold;
+      border-left: 2px solid $primary-color;
+      padding: .5rem 60px .5rem 1rem;
+      margin-bottom: -28px;
+      margin-top: 0;
+    }
+    &__content {
+      padding-top: 38px;
+    }
+    &__item {
+      border: 2px solid $color-light-blue-10;
+      padding: 5px 5px 0;
+      opacity: .75;
+      transition: opacity .3s ease-in-out;
+      display: inline-block;
+      position: relative;
+
+      &:hover,
+      &:focus{
+        opacity: 1;
+      }
+
+      .item__zoom {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding:5px;
+        color: $off-black;
+        background: rgba(white, .5);
+      }
+    }
+  }
+}
+
+.images__feed {
+  margin-bottom: 2rem;
+
+  figure{
+    margin: 0;
+  }
+
+  &__title {
+    @extend h6;
+    color: $primary-color;
+    font-weight: bold;
+    border-left: 2px solid $primary-color;
+    padding: .5rem 60px .5rem 1rem;
+    margin-bottom: -28px;
+    margin-top: 0;
+  }
+  &__content {
+    padding-top: 38px;
+  }
+  &__item {
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+.fasade{
+
+  &-feed {
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    .swiper-container {
+      padding-top: 2rem;
+    }
+
+    .box-item{
+      margin-bottom: 0;
+    }
+  }
+}

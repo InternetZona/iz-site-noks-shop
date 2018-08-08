@@ -1,0 +1,48 @@
+.step{
+  &__item{
+    @media #{$medium-and-down} {
+      margin-bottom: 15px;
+    }
+  }
+  &__icon{
+    @extend .valign-wrapper;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 3px solid $primary-color;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    > img {
+      margin: auto;
+    }
+  }
+  &__num{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: $primary-color;
+    border-radius: 50%;
+  }
+  &__content{
+    text-align: center;
+    font-size: .85rem;
+    color: $color-grey-30;
+    padding: 1rem;
+
+    p{
+      margin: 5px 0 0;
+    }
+  }
+  &__title{
+    font-size: 20px;
+    color: $off-black;
+  }
+}

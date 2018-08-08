@@ -1,0 +1,42 @@
+.page{
+  &--footer-sticky{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .main{
+      flex: 1 0 auto;
+    }
+
+    h1{
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &--product {
+    h1 {
+      color: $primary-color;
+      margin-bottom: 1.4rem;
+    }
+
+    .badge--discount{
+      @extend .badge;
+      font-size: .85rem!important;
+      color: white!important;
+      font-weight: bold;
+      float: none!important;
+      padding: 3px 10px!important;
+      margin: 0;
+      background: $secondary-color;
+    }
+  }
+}
+
+.section {
+  .section {
+    padding-bottom: 0;
+  }
+}

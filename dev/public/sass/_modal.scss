@@ -1,0 +1,161 @@
+.modal{
+  outline: none!important;
+  top: 5%!important;
+  max-height: 85%;
+
+  &-medium {
+    @media #{$large-and-up} {
+      width: 35%;
+    }
+  }
+
+  &-header{
+    padding: .5rem 1rem;
+    background: #f1f1f1;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    @media #{$medium-and-down} {
+      font-size: 16px;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    opacity: .5;
+    padding: 0;
+    z-index: 1;
+    background: transparent!important;
+    border: 0!important;
+    box-shadow: none!important;
+
+    > i {
+      line-height: 30px;
+      color: $secondary-color;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+
+
+  &.right-sheet {
+    top: 0!important;
+    left: auto;
+    right: 0;
+    width: 300px;
+    max-height: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  &-overlay{
+    opacity: .75!important;
+  }
+
+  &-content {
+    position: relative;
+
+    #modal-testimonial-video > & {
+      padding: 0;
+    }
+  }
+
+  &-testimonial {
+
+    .modal-close {
+      top: 2rem;
+    }
+
+    .collection{
+      margin: 0;
+      border: none;
+
+      .avatar {
+        padding:0;
+        min-height: auto;
+
+        .title {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        p{
+          font-size: .85rem;
+          color: $color-grey-20;
+
+          .rate{
+            color: $primary-color;
+          }
+        }
+
+        .inner-image {
+          display: block!important;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .testimonial-text {
+      @media #{$small-and-down} {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &-filter {
+
+    .modal-content {
+      padding: 0;
+    }
+
+    .modal-header {
+      @extend h4;
+      padding: 1rem;
+      background: $primary-color;
+      color: white;
+      font-weight: bold;
+      margin: 0;
+      position: relative;
+
+      .modal-close {
+        top: 50%;
+        margin-top: -15px;
+        border: none;
+        background: transparent;
+      }
+    }
+
+  }
+
+}
+
+#modal-testimonial-video{
+  .modal-close {
+    color: white;
+    z-index: 1;
+  }
+}
+
+#modal-policy {
+  .modal-close {
+    top: 2rem;
+  }
+}

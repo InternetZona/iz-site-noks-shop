@@ -1,0 +1,46 @@
+{
+  "project": {
+    "name": "modxsite",
+    "template": "default",
+    "dev": "./dev",
+    "dist": "./dist"
+  },
+  "html": {
+    "dev": "source",
+    "dist": ""
+  },
+  "css": {
+    "dev": "public/sass",
+    "dist": "css",
+    "unCss": false
+  },
+  "js": {
+    "dev": "public/js",
+    "dist": "js",
+    "extensions": [".json", ".js"]
+  },
+  "img": {
+    "dev": "public/img/**/",
+    "dist": "img",
+    "extensions": "*.+(jpg|jpeg|gif|png|svg)"
+  },
+  "svg": {
+    "dev": "public/img/svg",
+    "dist": "img/svg/sprite.svg"
+  },
+  "fonts": {
+    "dev": "public/fonts",
+    "dist": "fonts",
+    "extensions": "*.+(woff2|woff|eot|ttf|svg)"
+  },
+  "php": {
+    "dev": "source",
+    "dist": ""
+  },
+  "deploy": {
+    "hostname": "localhost",
+    "username": "ftp",
+    "path": "/dev.loc",
+    "password": "ftp"
+  }
+}

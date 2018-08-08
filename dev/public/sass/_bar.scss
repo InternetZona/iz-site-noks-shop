@@ -1,0 +1,13 @@
+.bar {
+  margin: 0;
+  &__item {
+    display: inline-block;
+    &:last-child {
+      margin-left: 1rem;
+
+      @media #{$small-and-down} {
+        margin-left: .5rem;
+      }
+    }
+  }
+}

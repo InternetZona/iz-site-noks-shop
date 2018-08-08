@@ -1,0 +1,50 @@
+.favorite{
+  position: relative;
+  padding-left: 25px;
+
+  &__link{
+    display: inline-block;
+    font-size: .85rem;
+    color: $off-black;
+
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+
+    &:before{
+      position: absolute;
+      content: "";
+      top: 50%;
+      margin-top: -11px;
+      left: 0;
+      width: 22px;
+      height: 21px;
+      background: url('../img/favorite-active.png') no-repeat center center;
+    }
+
+    &.favorite--empty {
+      &:before{
+        background: url('../img/favorite.png') no-repeat center center;
+      }
+    }
+
+  }
+  &__text{
+    @media #{$small-and-down} {
+      display: none;
+    }
+  }
+  &__counter {
+    font-size: .85rem;
+    color: $off-black;
+
+    @media #{$small-and-down} {
+      display: none;
+    }
+
+    .favorite--empty &{
+      display: none;
+    }
+  }
+}
