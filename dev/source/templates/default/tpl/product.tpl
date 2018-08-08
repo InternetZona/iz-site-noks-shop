@@ -32,9 +32,6 @@
                                 Стоимость: {if {field name=template} == 9}от{/if} <span class="product__cost">{{tv name=price_discount}|default:{tv name=price}|number_format:0:',':' '}</span>
                             {/if}
                         </li>
-                        {if $productionTime = {tv name=productionTime}}
-                            <li>Срок изготовления: <span>{$productionTime}</span></li>
-                        {/if}
                     </ul>
 
                     {if {field name=template} == 52}
