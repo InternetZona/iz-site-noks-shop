@@ -21,6 +21,17 @@
       color: $primary-color;
       margin-bottom: 1.4rem;
     }
+
+    .badge--discount{
+      @extend .badge;
+      font-size: .85rem!important;
+      color: white!important;
+      font-weight: bold;
+      float: none!important;
+      padding: 3px 10px!important;
+      margin: 0;
+      background: $secondary-color;
+    }
   }
 }
 

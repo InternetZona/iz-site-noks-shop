@@ -115,6 +115,10 @@
         padding-left: 20px;
       }
     }
+
+    @media #{$large-and-up} {
+      cursor: default;
+    }
   }
 
   a.dd-panel__title{

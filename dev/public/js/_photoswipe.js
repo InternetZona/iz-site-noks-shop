@@ -185,4 +185,6 @@ import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
 
   initPhotoSwipeFromDOM('.gallery-photoswipe');
 
+  initPhotoSwipeFromDOM('.gallery-grid');
+
 })();

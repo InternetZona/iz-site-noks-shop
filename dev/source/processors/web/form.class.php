@@ -11,10 +11,17 @@ class modWebFormProcessor extends modSiteWebFormProcessor
     protected $contragentEmailsDir = 'messages/web/';
     protected $manager_group_ids = array(2);
 
+    protected $clientEmailSubjects = array(
+        'visit' => 'Заказ замера',
+        'project'   => 'Заказ проекта',
+        'feedback'  => 'Ваше обращение на сайте noks-kuhni.ru',
+        'order'     => 'Заказ кухни',
+        'checkout'  => 'Оплата заказа',
+    );
+
     public function initialize()
     {
         $this->setDefaultProperties(array(
-            'contragentEmailSubject'    => 'Заказ кухни.',
             'emailsenderName'           => 'Кухни Нокс'
         ));
 
@@ -38,15 +45,12 @@ class modWebFormProcessor extends modSiteWebFormProcessor
     {
         parent::sendNotification();
 
-        if ($this->getProperty('template') == 'order') {
-
-            if ($contragentEmail = $this->getProperty('email', false)
-                AND filter_var($contragentEmail, FILTER_VALIDATE_EMAIL)
-            ) {
-
-                $this->sendContragentEmail($contragentEmail);
-            }
+        if ($contragentEmail = $this->getProperty('email', false)
+            AND filter_var($contragentEmail, FILTER_VALIDATE_EMAIL)
+        ) {
+            $this->sendContragentEmail($contragentEmail);
         }
+
         return ;
     }
 
@@ -61,7 +65,8 @@ class modWebFormProcessor extends modSiteWebFormProcessor
             $this->modx->mail->set(modMail::MAIL_BODY, $message);
             $this->modx->mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailsender'));
             $this->modx->mail->set(modMail::MAIL_FROM_NAME, $this->getProperty('emailsenderName'));
-            $this->modx->mail->set(modMail::MAIL_SUBJECT, $this->getProperty('contragentEmailSubject'));
+            $this->modx->mail->set(modMail::MAIL_SUBJECT, $this->getContragentEmailSubject());
+
             $this->modx->mail->address('to', $this->getProperty('email'));
             $this->modx->mail->setHTML(true);
             if (!$this->modx->mail->send()) {
@@ -69,6 +74,10 @@ class modWebFormProcessor extends modSiteWebFormProcessor
             }
             $this->modx->mail->reset();
         }
+    }
+
+    public function getContragentEmailSubject() {
+        return $this->clientEmailSubjects[$this->getProperty('template')];
     }
     
 }

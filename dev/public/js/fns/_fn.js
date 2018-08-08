@@ -16,7 +16,10 @@ jQuery(function($) {
         $form = $this.closest('form'),
         urlParams = [];
 
-      if ($form.attr('id') === 'portfolio-controller') {
+      if (
+        ($form.attr('id') === 'portfolio-controller') ||
+        ($form.attr('id') === 'list-controller')
+      ) {
 
         $form.submit();
 

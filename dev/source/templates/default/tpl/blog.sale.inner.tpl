@@ -10,9 +10,12 @@
 
                 <div class="section page__content">
 
-                    <img src="{tv name=image}" class="responsive-img">
-
                     <div class="content-wrapper">
+
+                        <div class="image-wrapper">
+                            <img  src="{tv name=image}" class="responsive-img">
+                        </div>
+
                         {field name=content}
                     </div>
 

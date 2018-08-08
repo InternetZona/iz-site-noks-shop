@@ -47,10 +47,20 @@
       opacity: .75;
       transition: opacity .3s ease-in-out;
       display: inline-block;
+      position: relative;
 
       &:hover,
       &:focus{
         opacity: 1;
+      }
+
+      .item__zoom {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding:5px;
+        color: $off-black;
+        background: rgba(white, .5);
       }
     }
   }
