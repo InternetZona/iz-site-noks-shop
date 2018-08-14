@@ -91,7 +91,7 @@
                 <div class="col m3 xl2 right-align valign-wrapper">
                     <ul class="header__contacts">
                         <li class="header__contacts-time">
-                            Пн.-Пт. 9:00-18:00
+                            Пн.-Вс. 10:00-20:00
                         </li>
                         <li>
                             <a class="header__contacts-phone" href="tel:84952088802">8 (495) 208-88-02</a>
