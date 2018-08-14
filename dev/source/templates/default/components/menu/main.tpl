@@ -153,7 +153,7 @@
     </li>
 
     <li>
-        <a class="dropdown-trigger dd-panel" href="#" data-target="dd-catalog-cupeboard">Шкафы купе</a>
+        <a class="dropdown-trigger dd-panel" href="#" data-target="dd-catalog-cupeboard">Шкафы-купе</a>
         <div id="dd-catalog-cupeboard" class="dropdown-content">
             <div class="row row--grid">
 

@@ -98,12 +98,6 @@
             </div>
         </div>
 
-        {if in_array({field name=template}, [10,34,36]) AND ($smarty.get.filter.itemMaterial == 2 OR {tv name=itemMaterial} == 2) }
-
-            {include file="components/alert/danger.tpl" text="Все представленные модели возможно исполнить в любом желаемом цвете"}
-
-        {/if}
-
         {if $result.success && $result.count > 0}
 
             {$paging = false}

@@ -15,6 +15,9 @@ if ($productType = $modx->getObject('catalogProductType', array(
                 $q = $modx->newQuery('modResource');
                 $q->where(array(
                     'template'  => $productType->seo_template_id
+                    ,'hidemenu'  => 0
+                    ,'published'    => 1
+                    ,'deleted'  => 0
                 ));
                 $q->leftJoin('modTemplateVar', 'tv', "tv.name = '{$filter->tv_key}'");
 
