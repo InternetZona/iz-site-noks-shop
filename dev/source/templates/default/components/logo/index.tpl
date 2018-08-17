@@ -4,7 +4,7 @@
         <span class="header__logo-brand">
             <img class="responsive-img" src="{$template_url}img/{$image}" alt="{config name=site_name}">
         </span>
-        <span class="header__logo-text">Мебель на заказ<br>и не только...</span>
+        <span class="header__logo-text">Делаем мебель -<br>создаем уют</span>
     </div>
 
 {else}
@@ -13,6 +13,6 @@
         <a href="{$modx->makeUrl({config name=site_start})}" class="header__logo-brand">
             <img class="responsive-img" src="{$template_url}img/{$image}" alt="{config name=site_name}">
         </a>
-        <span class="header__logo-text">Мебель на заказ<br>и не только...</span>
+        <span class="header__logo-text">Делаем мебель -<br>создаем уют</span>
     </div>
 {/if}
