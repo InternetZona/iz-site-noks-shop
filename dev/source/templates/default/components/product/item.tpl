@@ -33,7 +33,7 @@
                     </div>
                     {else}
                     <span class="product__cost">
-                        {$object.tvs.price.value|number_format:0:'.':' '}
+                        {if $object.tvs.isStartPrice.value}от {/if} {$object.tvs.price.value|number_format:0:'.':' '}
                     </span>
                 {/if}
             </div>
