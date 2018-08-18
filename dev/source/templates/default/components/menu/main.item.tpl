@@ -1,22 +1,24 @@
-<div class="dd-panel__title left-align">{$title}</div>
 
-<ul class="nav-inner">
+{$row = ""}
 
-    {foreach $objects as $data}
+{foreach $objects as $data}
 
-        {if $data.tvs.{$tv}.value}
+    {if $data.tvs.{$tv}.value}
 
-            {if $data.id == {field name=id}}
-                <li class="active">
-                    <a href="{$data.uri}">{$data.menutitle|default:$data.pagetitle}</a>
-                </li>
-            {else}
-                <li>
-                    <a href="{$data.uri}">{$data.menutitle|default:$data.pagetitle}</a>
-                </li>
-            {/if}
-
+        {if $data.id == {field name=id}}
+            {$row = $row|cat:'<li class="active"><a href="'|cat:$data.uri|cat:'">'|cat:$data.menutitle|default:$data.pagetitle|cat:'</a></li>'}
+        {else}
+            {$row = $row|cat:'<li><a href="'|cat:$data.uri|cat:'">'|cat:$data.menutitle|default:$data.pagetitle|cat:'</a></li>'}
         {/if}
 
-    {/foreach}
-</ul>
+    {/if}
+
+{/foreach}
+
+{if $row}
+
+    <div class="dd-panel__title left-align">{$title}</div>
+
+    <ul class="nav-inner">{$row}</ul>
+
+{/if}
