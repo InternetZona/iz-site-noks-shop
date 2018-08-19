@@ -86,10 +86,11 @@
 
             {assign var=content value={field name=content}}
             {assign var=fasadeList value={tv name=fasade}|json_decode:true}
+            {assign var=doorsList value={tv name=doors}|json_decode:true}
             {assign var=colorsList value={tv name=colors}|json_decode:true}
             {assign var=equipList value={tv name=equip}|json_decode:true}
 
-            {if $content || $fasadeList || $colorsList || $equipList}
+            {if $content || $fasadeList || $colorsList || $equipList || $doorsList}
                 <div class="row product-tabs">
                     <div class="col s12">
                         <ul id="product-overview" class="tabs">
@@ -98,6 +99,9 @@
                             {/if}
                             {if $fasadeList}
                                 <li class="tab col s12 s3"><a href="#tab-fasade">Варианты фасадов</a></li>
+                            {/if}
+                            {if $doorsList}
+                                <li class="tab col s12 s3"><a href="#tab-doors">Модели дверей</a></li>
                             {/if}
                             {if $colorsList}
                                 <li class="tab col s12 s3"><a href="#tab-colors">Цветовые решения</a></li>
@@ -118,6 +122,17 @@
                         <div id="tab-fasade" class="tab__item col s12">
                             <div class="row row--grid">
                                 {foreach $fasadeList as $data}
+                                    <div class="col s6 m4 l3 xl2">
+                                        {include file="components/product/fasade.tpl" data=$data}
+                                    </div>
+                                {/foreach}
+                            </div>
+                        </div>
+                    {/if}
+                    {if $doorsList}
+                        <div id="tab-fasade" class="tab__item col s12">
+                            <div class="row row--grid">
+                                {foreach $doorsList as $data}
                                     <div class="col s6 m4 l3 xl2">
                                         {include file="components/product/fasade.tpl" data=$data}
                                     </div>
