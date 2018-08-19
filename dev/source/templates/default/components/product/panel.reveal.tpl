@@ -10,7 +10,18 @@
 
             {if $filter = $productFilter->getOne('Filter')}
 
-                {if !$filter->hideonfilter && !$filter->hideonmenu}
+                {if $productType->id == 2}
+                    {$excludeFilterIds = [9, 12]}
+
+                    {elseif $productType->id == 3}
+                        {$excludeFilterIds = [9, 12]}
+
+                    {elseif $productType->id == 5}
+                        {$excludeFilterIds = [8]}
+
+                {/if}
+
+                {if !$filter->hideonpreview && !in_array($filter->id, $excludeFilterIds|default:[])}
 
                     {if $value = $object['tvs'][$filter->tv_key]['value']}
 
