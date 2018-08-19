@@ -391,7 +391,7 @@
 
                         {include file="components/menu/main.item.tpl" tv="itemSolution" title="Решения" objects=$result.object}
 
-                        {include file="components/menu/main.item.tpl" tv="itemGender" title="Для кого" objects=$result.object}
+                        {include file="components/menu/main.item.tpl" tv="itemGender" title="Пол ребенка" objects=$result.object}
 
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
