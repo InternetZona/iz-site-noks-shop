@@ -10,7 +10,8 @@
   &-catalog,
   &-testimonials,
   &-recomendation,
-  &-showroom{
+  &-showroom,
+  &-brands{
     padding-top: 0;
 
     .row{
@@ -21,6 +22,10 @@
       padding-top: 30px;
       padding-bottom: 0;
     }
+  }
+
+  &-brands{
+    padding-bottom: 30px;
   }
 
   &-free,

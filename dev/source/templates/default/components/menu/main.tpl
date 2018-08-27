@@ -254,9 +254,9 @@
                         {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал" objects=$result.object}
 
                         {if {field name=id} == 832}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(832)}">Варианты наполения</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(832)}">Варианты наполнения</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(832)}">Варианты наполения</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(832)}">Варианты наполнения</a>
                         {/if}
 
                         {if {field name=id} == 24}

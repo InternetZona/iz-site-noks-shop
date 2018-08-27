@@ -26,7 +26,7 @@
 
             {$object = $result.object}
 
-            <div class="dd-panel__title center-align">{$rotatorTitle|default:"Нокс рекомендует"}</div>
+            <div class="dd-panel__title center-align">{$item.title}</div>
 
             <div class="card box-product product--preview">
                 <div class="card-image">
@@ -41,9 +41,31 @@
                     <a href="{$object.uri}"><img src="{$thumbImage}"></a>
                 </div>
                 <div class="card-content">
-                    <a href="{$object.uri}" class="card-title">
-                        {$item.title|default:$object.pagetitle}
-                    </a>
+                    <div class="row" style="margin-left: 0; margin-right: 0;">
+                        <div class="col s12">
+                            <a href="{$object.uri}" class="card-title">
+                                {$object.menutitle|default:$object.pagetitle}
+                            </a>
+                        </div>
+                        <div class="col s12">
+                            {if $discount = $object.tvs.price_discount.value}
+                                <div class="product--sale-info" style="margin-top: 1.5rem;">
+                                    <div class="old-price" style="right: 0;">
+                                        <span class="product__cost">
+                                            {$object.tvs.price.value|number_format:0:'.':' '}
+                                        </span>
+                                    </div>
+                                    <span class="product__cost">
+                                        {$discount|number_format:0:'.':' '}
+                                    </span>
+                                </div>
+                            {else}
+                                <span class="product__cost" style="margin-top: 1rem;">
+                                    {$object.tvs.price.value|number_format:0:'.':' '}
+                                </span>
+                            {/if}
+                        </div>
+                    </div>
                 </div>
             </div>
 

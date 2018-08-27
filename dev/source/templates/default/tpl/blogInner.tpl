@@ -19,7 +19,11 @@
             </div>
 
             <div class="col l3 pull-l9">
-                {include file="components/menu/folder.tpl" parent=12 title="Полезные советы"}
+
+                {block name=folder_menu}
+                    {include file="components/menu/folder.tpl" parent=12 title="Полезные советы"}
+                {/block}
+
             </div>
         </div>
 

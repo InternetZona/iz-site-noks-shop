@@ -524,4 +524,9 @@
     }
   }
 
+  &-brand {
+    margin: 0;
+    @extend .z-depth-0;
+  }
+
 }

@@ -47,6 +47,29 @@ import Swiper from 'swiper';
           prevEl: '.swiper-button-prev',
         },
       }), 100);
+    } else if (elem.id === 'swiper-brands') {
+      setTimeout(new Swiper('#' + elem.id, {
+        autoplay: false,
+        slidesPerView: 6,
+        spaceBetween: 30,
+        breakpoints: {
+          340: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          515: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 4,
+          }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      }), 100);
     } else if (elem.id === 'swiper-portfolio') {
       setTimeout(new Swiper('#' + elem.id, {
         autoplay: false,
