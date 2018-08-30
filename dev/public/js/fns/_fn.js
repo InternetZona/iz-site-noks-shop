@@ -280,7 +280,7 @@ jQuery(function($){
 
   if ($orderBtn.length > 0) {
 
-    $orderBtn.on('click', function(e) {
+    $('body').on('click', '.product__order-btn', function(e) {
       e.preventDefault();
 
       let $this = $(this),

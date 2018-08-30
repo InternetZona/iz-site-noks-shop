@@ -117,4 +117,12 @@ const Plyr = require('plyr');
 
     M.Dropdown.init(elem, config);
   });
+
+  let materialboxed = document.querySelectorAll('.materialboxed');
+
+  if (materialboxed !== null) {
+
+    M.Materialbox.init(materialboxed, {});
+  }
+
 })();

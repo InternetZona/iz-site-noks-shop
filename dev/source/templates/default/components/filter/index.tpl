@@ -5,7 +5,15 @@
 
                 {if $filter = $productFilter->getOne('Filter')}
 
-                    {if !$filter->hideonfilter}
+                    {if $productFilter->product_type_id == 2}
+                        {$excludeFilterIds = [9]}
+
+                        {elseif $productFilter->product_type_id == 3}
+                        {$excludeFilterIds = [9]}
+
+                    {/if}
+
+                    {if !$filter->hideonfilter && !in_array($filter->id, $excludeFilterIds|default:[])}
 
                         <li class="filter__item">
                             <select name="filter[{$filter->tv_key}]" class="filter__control">

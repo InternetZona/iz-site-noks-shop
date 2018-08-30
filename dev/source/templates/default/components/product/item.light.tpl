@@ -17,7 +17,7 @@
         <div class="row row--grid">
             <div class="col s12 m6 valign-wrapper">
                 <span class="product__cost">
-                    {$object.tvs.price.value|number_format:0:'.':' '}
+                    {if $object.tvs.isStartPrice.value}от {/if} {$object.tvs.price.value|number_format:0:'.':' '}
                 </span>
             </div>
             <div class="col s6 pull-s6 m6 valign-wrapper">

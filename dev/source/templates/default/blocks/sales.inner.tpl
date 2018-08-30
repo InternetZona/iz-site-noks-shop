@@ -7,11 +7,12 @@
         ,'where' => [
             'template'  => $productType->template_id
         ]
-        ,'limit'    => 10
+        ,'limit'    => 0
         ,'filter'    => [
-        'issale'    => 1
+            'issale'    => 1
         ]
-        ,'dir'      => 'RAND()'
+        ,'sort'      => 'RAND()'
+        ,'cached'   => true
     ]}
 
     {processor action="web/catalog/getdata" ns='modcatalog' params=$params assign=result}
@@ -25,6 +26,8 @@
 
                 <div id="swiper-sales" class="swiper-container swiper-content">
                     <div class="swiper-wrapper">
+
+                        {$result.object|@shuffle}
 
                         {foreach $result.object as $object}
                             <div class="swiper-slide">

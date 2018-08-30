@@ -18,7 +18,7 @@
             ,'where'    => [
                 'template' => $productType->template_id
             ]
-            ,'filter' => $smarty.get.filter
+            ,'filter' => array_merge($smarty.get.filter|default:[], ['is_sale'=>1])
             ,'sort' => 'publishedon'
             ,'dir'  => 'desc'
             ,'limit'    => $limit

@@ -69,21 +69,24 @@
                     {/if}
 
                     {if {field name=id} == 24}
-                        <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                        <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                     {else}
-                        <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                        <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                     {/if}
 
-                    {if {field name=id} == 24}
-                        <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=1')}" style="margin-bottom: 0;">Портфолио</a>
-                    {else}
-                        <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=1')}" style="margin-bottom: 0;">Портфолио</a>
-                    {/if}
+                    {*
+                        {if {field name=id} == 24}
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=1')}">Портфолио</a>
+                        {else}
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=1')}">Портфолио</a>
+                        {/if}
+                    *}
+
                 </div>
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=24}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=24}
 
                 </div>
 
@@ -109,9 +112,9 @@
                     <div class="col l4 xl3">
 
                         {if {field name=id} == 274}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(274)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(274)}">Все распашные шкафы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(274)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(274)}">Все распашные шкафы</a>
                         {/if}
 
                         {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал фасадов" objects=$result.object}
@@ -129,22 +132,26 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {/if}
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=2')}" style="margin-bottom: 0;">Портфолио</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=2')}" style="margin-bottom: 0;">Портфолио</a>
-                        {/if}
+
+                        {*
+                            {if {field name=id} == 24}
+                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=2')}">Портфолио</a>
+                            {else}
+                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=2')}">Портфолио</a>
+                            {/if}
+                        *}
+
                     </div>
 
                 {/if}
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=274}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=274}
 
                 </div>
 
@@ -170,9 +177,9 @@
                     <div class="col l4 xl3">
 
                         {if {field name=id} == 280}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(280)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(280)}">Все шкафы-купе</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(280)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(280)}">Все шкафы-купе</a>
                         {/if}
 
                         {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал фасадов" objects=$result.object}
@@ -190,22 +197,26 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {/if}
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=3')}" style="margin-bottom: 0;">Портфолио</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=3')}" style="margin-bottom: 0;">Портфолио</a>
-                        {/if}
+
+                        {*
+                            {if {field name=id} == 24}
+                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=3')}">Портфолио</a>
+                            {else}
+                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=3')}">Портфолио</a>
+                            {/if}
+                        *}
+
                     </div>
 
                 {/if}
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=280}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=280}
 
                 </div>
 
@@ -231,71 +242,51 @@
                     <div class="col l4 xl3">
 
                         {if {field name=id} == 286}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(286)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(286)}">Все гардеробные</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(286)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(286)}">Все гардеробные</a>
                         {/if}
 
                         {include file="components/menu/main.item.tpl" tv="itemConfiguration" title="Конфигурация" objects=$result.object}
-                        {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал" objects=$result.object}
                     </div>
 
                     <div class="col l4 xl3">
-                        {$params = [
-                            'parent'    => 23
-                                ,'where'     =>  [
-                                'id:IN'  => [494,495,496,497,498,499,500,501]
-                            ]
-                            ,'limit'    => 0
-                            ,'cached'   => true
-                            ,'showhidden'   => true
-                        ]}
+                        {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал" objects=$result.object}
 
-                        {processor action="site/web/resources/getdata" ns="modxsite" params=$params assign=resultMenu}
-
-                        {if $resultMenu.success && $resultMenu.count > 0}
-
-                            <div class="dd-panel__title left-align">Элементы гардероба</div>
-
-                            <ul class="nav-inner">
-
-                                {foreach $resultMenu.object as $object}
-                                    {if $object.id == {field name=id}}
-                                        <li class="active">
-                                            <a href="{$object.uri}">{$object.menutitle|default:$object.pagetitle}</a>
-                                        </li>
-                                    {else}
-                                        <li>
-                                            <a href="{$object.uri}">{$object.menutitle|default:$object.pagetitle}</a>
-                                        </li>
-                                    {/if}
-                                {/foreach}
-                            </ul>
-
+                        {if {field name=id} == 832}
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(832)}">Варианты наполнения</a>
+                        {else}
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(832)}">Варианты наполнения</a>
                         {/if}
+
+                        {if {field name=id} == 24}
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
+                        {else}
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
+                        {/if}
+
+
                     </div>
 
                     <div class="col l4 xl3">
 
                         {include file="components/menu/main.item.tpl" tv="itemSize" title="Популярные размеры" objects=$result.object}
 
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
-                        {/if}
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=4')}" style="margin-bottom: 0;">Портфолио</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=4')}" style="margin-bottom: 0;">Портфолио</a>
-                        {/if}
+                        {*
+                            {if {field name=id} == 24}
+                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=4')}">Портфолио</a>
+                            {else}
+                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=4')}">Портфолио</a>
+                            {/if}
+                        *}
+
                     </div>
 
                 {/if}
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=286}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=286}
 
                 </div>
 
@@ -321,9 +312,9 @@
                     <div class="col l4 xl3">
 
                         {if {field name=id} == 290}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(290)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(290)}">Все прихожие</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(290)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(290)}">Все прихожие</a>
                         {/if}
 
                         {include file="components/menu/main.item.tpl" tv="furnitureType" title="Вид мебели" objects=$result.object}
@@ -339,22 +330,26 @@
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {/if}
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=5')}" style="margin-bottom: 0;">Портфолио</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=5')}" style="margin-bottom: 0;">Портфолио</a>
-                        {/if}
+
+                        {*
+                            {if {field name=id} == 24}
+                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
+                            {else}
+                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
+                            {/if}
+                        *}
+
                     </div>
 
                 {/if}
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=290}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=290}
 
                 </div>
 
@@ -380,9 +375,9 @@
                     <div class="col l4 xl3">
 
                         {if {field name=id} == 295}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(295)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(295)}">Все детские</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(295)}">Полный каталог</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(295)}">Все детские</a>
                         {/if}
 
                         {include file="components/menu/main.item.tpl" tv="furnitureType" title="Вид мебели" objects=$result.object}
@@ -396,25 +391,29 @@
 
                         {include file="components/menu/main.item.tpl" tv="itemSolution" title="Решения" objects=$result.object}
 
-                        {include file="components/menu/main.item.tpl" tv="itemGender" title="Для кого" objects=$result.object}
+                        {include file="components/menu/main.item.tpl" tv="itemGender" title="Пол ребенка" objects=$result.object}
 
                         {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}" style="margin-bottom: 5px;">Полезные советы</a>
+                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {/if}
-                        {if {field name=id} == 24}
-                            <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=6')}" style="margin-bottom: 0;">Портфолио</a>
-                        {else}
-                            <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=6')}" style="margin-bottom: 0;">Портфолио</a>
-                        {/if}
+
+                        {*
+                            {if {field name=id} == 24}
+                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=6')}">Портфолио</a>
+                            {else}
+                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=6')}">Портфолио</a>
+                            {/if}
+                        *}
+
                     </div>
 
                 {/if}
 
                 <div class="col hide-on-large-only show-on-extra-large xl3">
 
-                    {include file="components/event/preview.tpl" id=295}
+                    {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=295}
 
                 </div>
 

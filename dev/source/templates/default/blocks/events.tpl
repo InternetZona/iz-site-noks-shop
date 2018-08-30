@@ -2,12 +2,12 @@
 'parent'    => 38
 ,'dir'      => 'DESC'
 ,'sort'     => 'publishedon'
-,'limit'    => 10
+,'limit'    => 0
 ,'cache'    => true
 ]}
 {processor action="site/web/resources/getdata" params=$params ns="modxsite" assign=result}
 
-{if $result.success && $result.count > 0}
+{if $result.success && $result.count >= 4}
     <div class="block-blog">
         <div class="section__title">
             Акции

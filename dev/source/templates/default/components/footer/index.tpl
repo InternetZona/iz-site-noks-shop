@@ -7,7 +7,7 @@
             </div>
             <div class="col s12 m6 l3">
                 {include file="components/menu/index.tpl" title="Каталоги" ids="24, 274, 280, 286, 290, 295" parent="23"}
-                {include file="components/menu/index.tpl" title="Акции и спецпредложения" ids="38, 752, 753" parent="0"}
+                {include file="components/menu/index.tpl" title="Акции и спецпредложения" ids="38, 752, 753, 835" parent="0"}
             </div>
             <div class="col s12 m6 l3">
                 {include file="components/menu/index.tpl" title="О нас" ids="6, 18, 17, 19, 17" parent="0" showhidden=1}
@@ -34,7 +34,7 @@
             © {$smarty.now|date_format:"%Y"} | NOKS ООО «НОКС МЕБЕЛЬ» ИНН 5032296487, ОГРН 1185053011989
             <small class="right">
                 Любое копирование информации не для нашего промо запрещены без письменного разрешения. <br>
-                <a href="/policy.doc">Политика в отношении обработки персональных данных</a>
+                <a href="#modal-policy" class="modal-trigger trigger-policy">Политика в отношении обработки персональных данных</a>
             </small>
 
         </div>

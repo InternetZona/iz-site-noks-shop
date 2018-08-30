@@ -11,7 +11,8 @@
             'ishit'    => 1
         ]
         ,'limit'    => 0
-        ,'dir'      => 'RAND()'
+        ,'sort'      => 'RAND()'
+        ,'cached'   => true
     ]}
 
     {processor action="web/catalog/getdata" ns='modcatalog' params=$params assign=result}
@@ -25,6 +26,8 @@
 
                 <div id="swiper-recomendation" class="swiper-container swiper-content">
                     <div class="swiper-wrapper">
+
+                        {$result.object|@shuffle}
 
                         {foreach $result.object as $object}
                             <div class="swiper-slide">

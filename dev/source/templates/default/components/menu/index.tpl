@@ -6,4 +6,12 @@
         ,'outerTpl' => 'wf.outer.tpl'
         ,'ignoreHidden'   => $showhidden|default:0
     ]}
+
+    {if $parent == 23}
+
+        <li>
+            <a href="{$modx->makeUrl(833)}">Бренды</a>
+        </li>
+
+    {/if}
 </ul>

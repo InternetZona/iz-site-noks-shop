@@ -33,7 +33,7 @@
                     </div>
                     {else}
                     <span class="product__cost">
-                        {$object.tvs.price.value|number_format:0:'.':' '}
+                        {if $object.tvs.isStartPrice.value}от {/if} {$object.tvs.price.value|number_format:0:'.':' '}
                     </span>
                 {/if}
             </div>
@@ -58,7 +58,7 @@
     {assign var=_li value=""}
 
     {if $object.tvs.ishit.value}
-        {$_li = $_li|cat:'<li><span class="badge badge--hit">хит</span></li>'}
+        {$_li = $_li|cat:'<li><span class="badge badge--hit">лидер продаж</span></li>'}
     {/if}
     {if $object.tvs.issale.value}
 

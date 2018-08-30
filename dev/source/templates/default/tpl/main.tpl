@@ -30,6 +30,7 @@
         {include file="blocks/blog.tpl"}
         {include file="blocks/testimonials.tpl"}
         {include file="blocks/request.tpl"}
+        {include file="blocks/brands.tpl"}
     </div>
 
 
