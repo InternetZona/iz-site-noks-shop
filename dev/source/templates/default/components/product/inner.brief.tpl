@@ -1,3 +1,4 @@
+{*
 <div class="row product-tabs">
     <div class="col s12">
         <ul id="product-overview-detail" class="tabs">
@@ -18,9 +19,9 @@
             </div>
             <div class="col s12 m4">
                 <div class="content-wrapper">
-                    {tv name=detail_config}
+                    {tv name=detail_price}
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div>*}
