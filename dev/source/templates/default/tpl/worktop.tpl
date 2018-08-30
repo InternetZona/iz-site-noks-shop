@@ -60,23 +60,23 @@
                                 {foreach $items as $row}
 
                                     <figure class="center-align col s6 m3 xl2">
-                                        {snippet name="pThumb" params=[
-                                        "input" => $row.image
-                                        ,"options" => "&w=1600&h=1200&zc=0&aoe=0&far=0&q=80"
-                                        ] assign=thumbImage}
 
-                                        <div class="catalog-feed__item" data-size="1200x600">
+                                        {$size = getimagesize($modx->getOption('base_path')|cat:$row.image)}
+
+                                        <div class="catalog-feed__item" data-size="{$size[0]}x{$size[1]}" href="{$row.image}">
+
+                                            <a class="item__zoom" href="#">
+                                                <i class="material-icons">zoom_in</i>
+                                            </a>
+
                                             {snippet name="pThumb" params=[
                                             "input" => $row.image,
                                             "options" => "&w=250&h=250&zc=1&aoe=0&far=0&q=80"
                                             ] assign=thumbImage}
 
                                             <img src="{$thumbImage}" class="responsive-img" />
-
-                                            <a href="{$thumbImage}" class="item__zoom">
-                                                <i class="material-icons">zoom_in</i>
-                                            </a>
                                         </div>
+
                                         <figcaption>
                                             <ul class="left-align">
                                                 <li>Производитель: <span class="text--bold">{$row.manufacturer}</span></li>
