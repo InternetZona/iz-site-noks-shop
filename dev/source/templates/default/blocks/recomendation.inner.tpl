@@ -27,7 +27,7 @@
                 <div id="swiper-recomendation" class="swiper-container swiper-content">
                     <div class="swiper-wrapper">
 
-                        {$result.object|@shuffle}
+                        {$r = $result.object|@shuffle}
 
                         {foreach $result.object as $object}
                             <div class="swiper-slide">
