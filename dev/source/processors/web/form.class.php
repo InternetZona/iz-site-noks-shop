@@ -14,7 +14,7 @@ class modWebFormProcessor extends modSiteWebFormProcessor
     protected $clientEmailSubjects = array(
         'visit' => 'Заказ замера',
         'project'   => 'Заказ проекта',
-        'feedback'  => 'Ваше обращение на сайте noks-kuhni.ru',
+        'feedback'  => 'Ваше обращение на сайте noks.ru',
         'order'     => 'Заказ кухни',
         'checkout'  => 'Оплата заказа',
     );
