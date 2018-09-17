@@ -48,7 +48,7 @@
 
     <div class="map--wrapper">
         <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш административный офис: <span class="text--bold">125040, г. Москва, 3-я улица Ямского Поля, дом 2, корпус 3</span></div>
-        <div id="map-master" class="map"></div>
+        <div id="map-master" class="map" style="height:270px;"></div>
     </div>
 
     <div class="row row--grid"><div class="container">{tv name="textpod2"}</div></div>
