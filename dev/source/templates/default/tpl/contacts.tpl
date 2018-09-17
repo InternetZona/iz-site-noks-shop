@@ -40,14 +40,14 @@
     </div>
 
     <div class="map--wrapper">
-        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш филиал в Московской области: <span class="text--bold">г. Одинцово, ул. Акуловская, д.2а</span></div>
+        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш шоу-рум: <span class="text--bold">г. Одинцово, ул. Акуловская, д.2а</span></div>
         <div id="map-branch" class="map"></div>
     </div>
 
     <div class="row row--grid"><div class="container">{tv name="textpod1"}</div></div>
 
     <div class="map--wrapper">
-        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш адрес: <span class="text--bold">125040, г. Москва, 3-я улица Ямского Поля, дом 2, корпус 3</span></div>
+        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш административный офис: <span class="text--bold">125040, г. Москва, 3-я улица Ямского Поля, дом 2, корпус 3</span></div>
         <div id="map-master" class="map"></div>
     </div>
 
