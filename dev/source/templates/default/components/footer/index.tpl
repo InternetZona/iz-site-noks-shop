@@ -27,7 +27,11 @@
                 </a>
             </div>
         </div>
-        <hr>
+        {if {field name="id"} == 1}
+            <div class="mainfootertext">{config name="mainfootertext"}</div>
+        {else}
+            <hr>
+        {/if}
     </div>
     <div class="footer__copyright">
         <div class="container">
