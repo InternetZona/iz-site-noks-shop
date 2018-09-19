@@ -99,6 +99,7 @@
                 <div class="contact__title left-align">Наши реквизиты</div>
                 <ul class="owner-summary">
                     <li>ООО «НОКС МЕБЕЛЬ»</li>
+                    <li>ИНН 5032296487, ОГРН 1185053011989</li>
                     <li>Телефон: 8 (495) 208-88-02</li>
                     <li>Эл.почта: info@noks-kuhni.ru </li>
                 </ul>
