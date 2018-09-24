@@ -6,7 +6,7 @@
         <input type="text" name="username" class="input-field browser-default full">
     </div>
     <div class="form__field col s12 m6 l6">
-        <label>Ваш номер телефон:</label>
+        <label>Ваш номер телефона:</label>
         <input placeholder="+7..." type="tel" name="phone" class="input-field browser-default full">
     </div>
     <div class="clear"></div>
