@@ -29,6 +29,7 @@
 
 {block name=modals}
     {include file="components/modals/callback.tpl"}
+    {include file="components/modals/showcallback.tpl"}
     {include file="components/modals/feedback.tpl"}
     {include file="components/modals/order.project.tpl"}
     {include file="components/modals/order.visit.tpl"}
