@@ -7,7 +7,7 @@
     </div>
     <div class="form__field col s12 m6 l6">
         <label>Ваш номер телефона:</label>
-        <input placeholder="+7..." type="tel" name="phone" class="input-field browser-default full">
+        <input placeholder="+7..." type="tel" name="phone" class="input-field browser-default full" required>
     </div>
     <div class="clear"></div>
     <div class="center-align col s12 m4 l4">
