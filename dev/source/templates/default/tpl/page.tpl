@@ -15,20 +15,20 @@
                 <i class="icon icon--project"></i>
                 Заказать проект</a>
         {elseif {field name=id} == 4 || {field name=id} == 5 || {field name=id} == 6 || {field name=id} == 78 || {field name=id} == 659}
-            <a href="#modal-callback" class="button-action modal-trigger col s6 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('call');">
+            <a href="#modal-callback" class="button-action modal-trigger col s8 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('call');">
                 <i class="icon material-icons">phone</i>
                 Заказать звонок</a>
-            <a href="#modal-feedback" class="button-action modal-trigger col s6 m3 l3 margin20" onclick="yaCounter49093180.reachGoal('soob');">
+            <a href="#modal-feedback" class="button-action modal-trigger col s8 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('soob');">
                 <i class="icon material-icons">mail</i>
-                Написать сообщение</a>
+                Написать</a>
         {elseif {field name=id} == 80}
-            <a href="#modal-callback" class="button-action modal-trigger col s6 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('call');">
+            <a href="#modal-callback" class="button-action modal-trigger col s8 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('call');">
                 <i class="icon material-icons">phone</i>
                 Заказать звонок</a>
-            <a href="#modal-feedback" class="button-action modal-trigger col s6 m3 l3 margin20" onclick="yaCounter49093180.reachGoal('soob');">
+            <a href="#modal-feedback" class="button-action modal-trigger col s8 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('soob');">
                 <i class="icon material-icons">mail</i>
-                Написать сообщение</a>
-            <a href="#modal-order-visit" class="button-action modal-trigger col s6 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('zamer');">
+                Написать</a>
+            <a href="#modal-order-visit" class="button-action modal-trigger col s8 m3 l2 margin20" onclick="yaCounter49093180.reachGoal('zamer');">
                 <i class="icon icon--ruler"></i>
                 Заказать замер</a>
         {/if}
