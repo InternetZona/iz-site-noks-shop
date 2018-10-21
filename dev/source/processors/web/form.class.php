@@ -64,7 +64,7 @@ class modWebFormProcessor extends modSiteWebFormProcessor
             $this->modx->getService('mail', 'mail.modPHPMailer');
             $this->modx->mail->set(modMail::MAIL_BODY, $message);
             $this->modx->mail->set(modMail::MAIL_FROM, $this->modx->getOption('emailsender'));
-            $this->modx->mail->set(modMail::MAIL_FROM_NAME, $this->getProperty('emailsenderName'));
+            $this->modx->mail->set(modMail::MAIL_FROM_NAME, 'НОКС МЕБЕЛЬ');
             $this->modx->mail->set(modMail::MAIL_SUBJECT, $this->getContragentEmailSubject());
 
             $this->modx->mail->address('to', $this->getProperty('email'));
