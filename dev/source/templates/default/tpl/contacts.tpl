@@ -40,15 +40,15 @@
     </div>
 
     <div class="map--wrapper">
-        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш филиал в Московской области: <span class="text--bold">г. Одинцово, ул. Акуловская, д.2а</span></div>
+        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш шоу-рум: <span class="text--bold">г. Одинцово, ул. Акуловская, д.2а</span></div>
         <div id="map-branch" class="map"></div>
     </div>
 
     <div class="row row--grid"><div class="container">{tv name="textpod1"}</div></div>
 
     <div class="map--wrapper">
-        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш адрес: <span class="text--bold">125040, г. Москва, 3-я улица Ямского Поля, дом 2, корпус 3</span></div>
-        <div id="map-master" class="map"></div>
+        <div class="h6"><span class="text-primary"><i class="fas fa-map-marker-alt fa-fw"></i> </span>Наш административный офис: <span class="text--bold">125040, г. Москва, 3-я улица Ямского Поля, дом 2, корпус 3</span></div>
+        <div id="map-master" class="map" style="height:270px;"></div>
     </div>
 
     <div class="row row--grid"><div class="container">{tv name="textpod2"}</div></div>
@@ -101,6 +101,24 @@
                     <li>ООО «НОКС МЕБЕЛЬ»</li>
                     <li>Телефон: 8 (495) 208-88-02</li>
                     <li>Эл.почта: info@noks-kuhni.ru </li>
+                </ul>
+
+                <ul class="owner-summary">
+                    <li>ОГРН	1185053011989</li>
+                    <li>ИНН/КПП	5032296487/503201001</li>
+                    <li>ОКВЭД	31.01 /   ОКПО	28726715   /   ОКАТО	46241501000</li>
+
+                </ul>
+                <ul class="owner-summary">
+                    <li>Юрид. адрес: 143002, МО, Одинцовский р-он, ул. Акуловская, д. 2а, литера Б, офис 201, пом. 4</li>
+                    <li>Факт. адрес:	143002, МО, Одинцовский р-он, ул. Акуловская, д. 2а, офис 201</li>
+                </ul>
+                <ul class="owner-summary">
+                    <li>Банковские реквизиты:</li>
+                    <li>Банк:	Филиал № 7701 Банка ВТБ (ПАО)</li>
+                    <li>Р/с:	40702810642030000179</li>
+                    <li>К/с:	30101810345250000745</li>
+                    <li>БИК	044525745</li>
                 </ul>
             </div>
         </div>
