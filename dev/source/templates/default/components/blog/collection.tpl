@@ -8,12 +8,12 @@
             <img src="{$thumbImage}">
         </a>
     </div>
-    <div class="card-stacked">
+    <div class="card-stacked collections">
         <div class="card-content">
             <div class="card-title">
                 <a href="{$object.uri}">{$object.pagetitle}</a>
             </div>
-            <p class="hide-on-small-and-down">{$object.tvs.text.value}</p>
+            {$object.tvs.text.value}
                 <div class="center-align"><a href="{$object.content}" class="button-action width_auto">Смотреть коллекцию</a></div>
         </div>
     </div>
