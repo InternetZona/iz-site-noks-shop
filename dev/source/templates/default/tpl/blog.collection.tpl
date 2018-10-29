@@ -12,7 +12,7 @@
 
         {foreach $result.object as $object}
 
-            {include file="components/blog/sale.tpl" object=$object}
+            {include file="components/blog/collection.tpl" object=$object}
 
         {/foreach}
 

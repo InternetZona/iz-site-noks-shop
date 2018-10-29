@@ -130,7 +130,9 @@
     </div>
     <div class="container">
         {include file="blocks/recomendation.inner.tpl"}
-        {include file="blocks/showroom.inner.tpl" productTypeId={tv name=productType}}
+    {*
+    {include file="blocks/showroom.inner.tpl" productTypeId={tv name=productType}}
+    *}
         {include file="blocks/events.tpl"}
         {include file="blocks/testimonials.tpl"}
         {include file="blocks/request.tpl"}
