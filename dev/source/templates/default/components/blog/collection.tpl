@@ -14,7 +14,7 @@
                 <a href="{$object.uri}">{$object.pagetitle}</a>
             </div>
             {$object.tvs.text.value}
-                <div class="center-align"><a href="{$object.content}" class="button-action width_auto">Смотреть коллекцию</a></div>
+                <div class="center-align"><a href="{$object.uri}" class="button-action width_auto">Смотреть коллекцию</a></div>
         </div>
     </div>
 </div>

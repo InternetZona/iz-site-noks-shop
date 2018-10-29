@@ -18,7 +18,7 @@
                 <div class="swiper-wrapper">
                     {foreach $result.object as $object}
                         <div class="swiper-slide">
-                            {include file="components/blog/item.tpl" object=$object}
+                            {include file="components/blog/action.tpl" object=$object}
                         </div>
                     {/foreach}
                 </div>

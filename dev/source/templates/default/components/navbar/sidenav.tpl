@@ -13,7 +13,7 @@
 
     {snippet name="Wayfinder" params=[
         'startId'   => 0,
-        'where'     => '[{"id:not in":[1,23]}]',
+        'where'     => '[{"id:not in":[1,23,924]}]',
         'outerTpl'  => 'wf.outer.tpl',
         'level'     => 1
     ]}
