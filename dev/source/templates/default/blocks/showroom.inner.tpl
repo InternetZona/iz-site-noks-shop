@@ -1,5 +1,3 @@
-ТЕСТ
-
 {assign var=params value=[
 'parent'    => 21
 ,'where'    => [
