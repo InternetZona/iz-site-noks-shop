@@ -420,7 +420,9 @@
             </div>
         </div>
     </li>
-
+    <li>
+        <a href="{$modx->makeUrl(924)}">Коллекции</a>
+    </li>
     <li>
         <a href="{$modx->makeUrl(38)}">Акции</a>
     </li>
