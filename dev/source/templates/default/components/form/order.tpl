@@ -1,4 +1,4 @@
-<form name="order" class="form form--ajax" autocomplete="off">
+<form name="order" class="form form--ajax" autocomplete="off" data-order="{$smarty.now}">
     <input type="hidden" name="action" value="web/form">
     <input type="hidden" name="subject" value="Заказ кухни">
     <div class="form__field">

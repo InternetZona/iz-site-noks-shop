@@ -435,13 +435,71 @@ jQuery(function($) {
                 });
 
                 if ($(form).attr('name') === 'order') {
-                  let confirmTpl = '<h4 style="color: #848181;">Спасибо ваш заказ успешно оформлен!</h4>'
+
+                  let basketList = JSON.parse($.cookie('basket'));
+                  let amount = 0;
+
+                  basketList.map(function(elem) {
+                    amount += parseInt(elem.price);
+                  });
+
+                  $('.cart__alert-content').empty();
+
+                  $.ajax({
+                    url: 'assets/components/modxsite/connectors/connector.php',
+                    method: 'post',
+                    data: {
+                      amount: amount,
+                      action: 'web/payment/create',
+                      order: $form.data('order'),
+                      username: $form.find('[name="username"]').val(),
+                      email: $form.find('[name="email"]').val(),
+                      phone: $form.find('[name="phone"]').val(),
+                    },
+                    success: function(response) {
+                      if (response.success) {
+                        let payment = response.object;
+
+                        let itemListTpl = '';
+
+                        $('.cart__item .cart__item-summary').each(function() {
+                          let $title = $(this).find('.cart__item-title a');
+                          let $price = $(this).find('.cart__item-price');
+
+                          itemListTpl += '<li>' + $title.text() + ' - ' + $price.text() + ' руб</li>'
+                        });
+
+                        $('.cart__alert-content').append(
+                          '<div class="center-align">'
+                          + '<ul class="order-list__summary" style="color: #848181;">'
+                          + '<li class="order-list__header"> Детализация заказа:</li>'
+                          + itemListTpl + '</ul>'
+                          + '<p class="h4" style="color: #848181;">Общая сумма к оплате: ' + number_formmat(amount) + ' рублей</p>'
+                          + '<a href="' + payment.confirmation.confirmation_url + '" class="btn">Оплатить сейчас</a>'
+                          + '<ul class="payments-list">'
+                          + '<li class="payments-list__header">Другие способы оплаты:</li>'
+                          + '<li class="payments-list__item">Наличными в нашем офисе</li>'
+                          + '<li class="payments-list__item">Безналичным платежом в отделении банка</li>'
+                          + '<li class="payments-list__item">Сертификатом «НОКС-МЕБЕЛЬ»</li>'
+                          + '</ul></div>'
+                        );
+                      }
+                    },
+                  })
+
+                  let confirmTpl = '<h3 style="color: #848181;">Спасибо ваш заказ успешно оформлен!</h3>'
                     + '<p>В ближайшее время с вами свяжется наш менеджер.</p>';
 
-                  $('.cart__alert-content').html(confirmTpl);
+                  $('.cart__alert-content').prepend(confirmTpl);
+
                   $('.cart').addClass('cart--empty');
 
                   $('.quick-cart').addClass('quick-cart--empty');
+
+                  $('html, body').animate({
+                    scrollTop: $("h1").offset().top - 20
+                  }, 1000);
+
                   $('.quick-cart__counter-badge').html(0);
                   $('.quick-cart__counter-cost').html(0);
 

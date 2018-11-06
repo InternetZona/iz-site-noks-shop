@@ -19,6 +19,10 @@ class modWebPublicActionProcessor extends modSiteWebPublicActionProcessor
                     require_once __DIR__ . '/../form.class.php';
                     self::$actualClassName = "modWebFormProcessor";
                     break;
+                case 'web/payment/create':
+                    require_once __DIR__ . '/../payment/create.class.php';
+                    self::$actualClassName = "modWebPaymentsCreateProcessor";
+                    break;
                 default: ;
             }
         }
