@@ -416,6 +416,8 @@ jQuery(function($) {
 
               data += '&' + basketData;
             }
+
+            data += '&orderId=' + $form.data('order');
           }
 
           $.ajax({
@@ -518,6 +520,8 @@ jQuery(function($) {
 
                 form.reset();
 
+                $(form).parent().hide();
+
               } else {
                 M.toast({
                   html: 'Ошибка отправки запроса.'
@@ -601,7 +605,6 @@ jQuery(function($) {
 
         case 'visit':
         case 'project':
-        case 'order':
 
           validator.rules = Object.assign({}, validator.rules, {
             phone: {
@@ -613,6 +616,21 @@ jQuery(function($) {
               email: true,
             },
           });
+          break;
+
+        case 'order':
+
+          validator.rules = Object.assign({}, validator.rules, {
+            phone: {
+              required: true,
+            },
+
+            email: {
+              required: true,
+              email: true,
+            },
+          });
+
           break;
 
         default: ;

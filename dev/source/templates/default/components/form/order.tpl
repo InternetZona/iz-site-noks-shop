@@ -1,6 +1,6 @@
 <form name="order" class="form form--ajax" autocomplete="off" data-order="{$smarty.now}">
     <input type="hidden" name="action" value="web/form">
-    <input type="hidden" name="subject" value="Заказ кухни">
+    <input type="hidden" name="subject" value="Заказ мебели">
     <div class="form__field">
         <label>Ваше имя:</label>
         <input type="text" name="username" class="input-field browser-default full">

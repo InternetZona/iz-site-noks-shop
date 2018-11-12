@@ -15,7 +15,7 @@ class modWebFormProcessor extends modSiteWebFormProcessor
         'visit' => 'Заказ замера',
         'project'   => 'Заказ проекта',
         'feedback'  => 'Ваше обращение на сайте noks.ru',
-        'order'     => 'Заказ кухни',
+        'order'     => 'Заказ мебели',
         'checkout'  => 'Оплата заказа',
     );
 
@@ -45,10 +45,13 @@ class modWebFormProcessor extends modSiteWebFormProcessor
     {
         parent::sendNotification();
 
-        if ($contragentEmail = $this->getProperty('email', false)
-            AND filter_var($contragentEmail, FILTER_VALIDATE_EMAIL)
-        ) {
-            $this->sendContragentEmail($contragentEmail);
+        $template = $this->getProperty('template');
+        if ($template == 'order' || $template == 'checkout') {
+            if ($contragentEmail = $this->getProperty('email', false)
+                AND filter_var($contragentEmail, FILTER_VALIDATE_EMAIL)
+            ) {
+                $this->sendContragentEmail($contragentEmail);
+            }
         }
 
         return ;
