@@ -240,3 +240,26 @@
     margin: 0;
   }
 }
+
+.order-list{
+  &__summary {
+    margin: 1rem 0;
+    > li {
+      display: block;
+    }
+  }
+  &__title {
+    @extend .h4;
+    color: #848181;
+  }
+}
+.payments-list {
+  margin: 1rem;
+  color: #848181;
+  > li {
+    display: block;
+  }
+  &__header {
+    font-weight: bold;
+  }
+}
