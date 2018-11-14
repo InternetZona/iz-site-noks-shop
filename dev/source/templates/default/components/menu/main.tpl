@@ -1,4 +1,4 @@
-<ul id="desktop-menu" class="hide-on-med-and-down">
+<ul id="desktop-menu" class="hide-on-small-only">
     <li>
         <a class="dropdown-trigger dd-panel" href="#" data-target="dd-catalog-style">Кухни</a>
         <div id="dd-catalog-style" class="dropdown-content">
