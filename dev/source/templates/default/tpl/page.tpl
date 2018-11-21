@@ -1,7 +1,6 @@
 {extends file="basepage.tpl"}
 
 {block name=page_content}
-    <div class="row">
         <div class="content-wrapper">
             {field name=content}
         </div>
@@ -32,6 +31,4 @@
                 <i class="icon icon--ruler"></i>
                 Заказать замер</a>
         {/if}
-
-    </div>
 {/block}

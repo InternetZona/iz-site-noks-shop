@@ -1,9 +1,9 @@
 <div class="container">
     <div class="sitename">
         {if {field name=id} == {config name=site_start}}
-            <span class="brand-logo hide-on-med-and-up">Создаем уют</span>
+            <span class="brand-logo hide-on-med-and-up">ДЕЛАЕМ МЕБЕЛЬ - СОЗДАЕМ УЮТ</span>
         {else}
-            <a href="{$modx->makeUrl({config name=site_start})}" class="brand-logo hide-on-med-and-up">Создаем уют</a>
+            <a href="{$modx->makeUrl({config name=site_start})}" class="brand-logo hide-on-med-and-up">ДЕЛАЕМ МЕБЕЛЬ - СОЗДАЕМ УЮТ</a>
         {/if}
     </div>
     <div class="clear"></div>
