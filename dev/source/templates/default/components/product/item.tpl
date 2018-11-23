@@ -1,6 +1,8 @@
 <div class="card box-product">
     <div class="card-image">
 
+        {$colors = $object.tvs.colors.value|json_decode:true}
+
         {$tvImages = $object.tvs.images.value|json_decode:true}
 
         {snippet name="pThumb" params=[
@@ -17,6 +19,14 @@
         <a href="{$object.uri}" class="card-title">
             {$object.menutitle|default:$object.pagetitle}
         </a>
+        {if {$colors[0].image}}
+            <span class="colors">
+            {foreach $colors as $data}
+                <img src="{$data.image}">
+            {/foreach}
+            </span>
+        {/if}
+        <div class="clear"></div>
         <div class="row row--grid">
             <div class="col s12 m6 valign-wrapper">
                 {if $discount = $object.tvs.price_discount.value}
