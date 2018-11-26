@@ -1,6 +1,7 @@
 <form name="showcallback" class="form form--ajax row" autocomplete="off">
     <input type="hidden" name="action" value="web/form">
     <input type="hidden" name="subject" value="Заказ обратного звонка">
+    <input type="hidden" name="ref" value="{$smarty.cookies.ref}">
     <div class="form__field col s12 m6 l6">
         <label>Ваше имя:</label>
         <input type="text" name="username" class="input-field browser-default full">
