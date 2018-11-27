@@ -4,7 +4,8 @@
         <div class="content-wrapper">
             {field name=content}
         </div>
-
+<div class="row">
+    <div class="container">
         {if {field name=id} == 2}
             <a href="#modal-order-visit" class="button-action modal-trigger col s6 m3 l2" onclick="yaCounter49093180.reachGoal('zamer');">
                 <i class="icon icon--ruler"></i>
@@ -31,4 +32,6 @@
                 <i class="icon icon--ruler"></i>
                 Заказать замер</a>
         {/if}
+</div>
+</div>
 {/block}
