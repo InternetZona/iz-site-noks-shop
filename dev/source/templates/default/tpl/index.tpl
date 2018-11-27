@@ -14,7 +14,13 @@
     {field name=pagetitle}|strpos:"кухни" !== false ||
     {field name=pagetitle}|strpos:"Стол" !== false ||
     {field name=pagetitle}|strpos:"Стул" !== false ||
-    {field name=pagetitle}|strpos:"Обеденные" !== false}
+    {field name=pagetitle}|strpos:"Обеденные" !== false ||
+    {field name=pagetitle}|strpos:"Бытовая техника" !== false ||
+    {field name=pagetitle}|strpos:"Духовой шкаф" !== false ||
+    {field name=pagetitle}|strpos:"Посудомоечная машина" !== false ||
+    {field name=pagetitle}|strpos:"Микроволновая печь" !== false ||
+    {field name=pagetitle}|strpos:"Вытяжка" !== false ||
+    {field name=pagetitle}|strpos:"поверхность" !== false}
     <meta name="robots" content="noindex, nofollow">
     {/if}
 </head>
