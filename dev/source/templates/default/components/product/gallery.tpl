@@ -45,7 +45,7 @@
 
                                 {snippet name="pThumb" params=[
                                     "input" => $data.image
-                                    ,"options" => "&w={$width}&h={$height}&zc=1&aoe=0&far=0&q=70"
+                                    ,"options" => "&w={$width}&h={$height}&zc=1&aoe=0&far=0&q=70&fltr=wmi|/assets/components/modxsite/templates/default/img/noks_watermark.png|C|100|0|0"
                                 ] assign=thumbImage}
 
 
@@ -53,7 +53,7 @@
 
                                     {snippet name="pThumb" params=[
                                     "input" => $data.image
-                                    ,"options" => "&w=605&h=425&zc=1&aoe=0&far=0&q=70"
+                                    ,"options" => "&w=605&h=425&zc=1&aoe=0&far=0&q=70&fltr=wmi|/assets/components/modxsite/templates/default/img/noks_watermark_min.png|C|100|0|0"
                                     ] assign=thumbImage}
 
                                     <img src="{$thumbImage}" class="responsive-img" alt="{field name=pagetitle} - {$data.MIGX_id}" />
