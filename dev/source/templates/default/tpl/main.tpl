@@ -28,6 +28,7 @@
         *}
 
         {include file="blocks/blog.tpl"}
+        {include file="blocks/videomaterials.tpl"}
         {include file="blocks/testimonials.tpl"}
         {field name="content"}
         {include file="blocks/request.tpl"}
