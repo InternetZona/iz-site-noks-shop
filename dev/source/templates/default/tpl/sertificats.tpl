@@ -1,0 +1,25 @@
+{extends file="basepage.tpl"}
+
+{block name=page_content}
+
+    {$tvData = {tv name=sertificats}|json_decode:true}
+
+    <div class="row">
+
+        {assign var=testimonialsList value=[]}
+
+        {foreach $tvData as $data}
+
+            <div class="col s12 m4 l3 center-align">
+                {include file="components/sertificats/item.tpl" data=$data}
+            </div>
+
+        {/foreach}
+
+        <script>
+            var testimonialsList = {$testimonialsList|json_encode};
+        </script>
+
+    </div>
+
+{/block}

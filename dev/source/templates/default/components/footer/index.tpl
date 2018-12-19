@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row row--grid">
             <div class="col s12 m6 l3">
-                {include file="components/menu/index.tpl" title="Покупателю" ids="80,2,3,4,5,12,937" parent="0"}
+                {include file="components/menu/index.tpl" title="Покупателю" ids="80,2,3,4,5,12,937,939" parent="0"}
                 {include file="components/menu/index.tpl" title="Сервис" ids="20, 81, 78" parent="0"}
             </div>
             <div class="col s12 m6 l3">
