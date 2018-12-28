@@ -316,32 +316,31 @@
                         {else}
                             <a class="dd-panel__title left-align" href="{$modx->makeUrl(290)}">Все прихожие</a>
                         {/if}
-
-                        {include file="components/menu/main.item.tpl" tv="furnitureType" title="Вид мебели" objects=$result.object}
-                        {include file="components/menu/main.item.tpl" tv="itemSolution" title="Решения" objects=$result.object}
-                    </div>
-
-                    <div class="col l4 xl3">
+                        {*
+                         {include file="components/menu/main.item.tpl" tv="furnitureType" title="Вид мебели" objects=$result.object}
+                         {include file="components/menu/main.item.tpl" tv="itemSolution" title="Решения" objects=$result.object}
+                        *}
                         {include file="components/menu/main.item.tpl" tv="itemMaterial" title="Материал" objects=$result.object}
                     </div>
 
                     <div class="col l4 xl3">
-
                         {include file="components/menu/main.item.tpl" tv="itemStyle" title="Стиль" objects=$result.object}
-
                         {if {field name=id} == 24}
                             <a class="dd-panel__title left-align active" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {else}
                             <a class="dd-panel__title left-align" href="{$modx->makeUrl(12)}">Полезные советы</a>
                         {/if}
+                    </div>
 
+                    <div class="col hide-on-large-only show-on-extra-large xl3">
+                        {include file="components/menu/rotation.tpl" rotatorTitle="Купи с выгодой" id=290}
                         {*
-                            {if {field name=id} == 24}
-                                <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
-                            {else}
-                                <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
-                            {/if}
-                        *}
+                        {if {field name=id} == 24}
+                         <a class="dd-panel__title left-align active" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
+                         {else}
+                         <a class="dd-panel__title left-align" href="{$modx->makeUrl(17, 'web', 'type=5')}">Портфолио</a>
+                         {/if}
+                         *}
 
                     </div>
 
