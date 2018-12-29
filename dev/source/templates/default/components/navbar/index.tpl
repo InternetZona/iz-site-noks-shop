@@ -1,5 +1,6 @@
 <div class="container">
     <div class="sitename">
+        <div><a class="holiday hide-on-med-and-up" href="{$modx->makeUrl(941)}">Работа в праздники</a></div>
         {if {field name=id} == {config name=site_start}}
             <span class="brand-logo hide-on-med-and-up">ДЕЛАЕМ МЕБЕЛЬ - СОЗДАЕМ УЮТ</span>
         {else}
