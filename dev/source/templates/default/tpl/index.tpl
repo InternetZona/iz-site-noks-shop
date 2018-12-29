@@ -22,6 +22,8 @@
     {field name=pagetitle}|strpos:"Вытяжка" !== false ||
     {field name=pagetitle}|strpos:"поверхность" !== false}
     <meta name="robots" content="noindex, nofollow">
+    {else}
+    <meta name="robots" content="index, follow">
     {/if}
     {literal}
         <!-- Facebook Pixel Code -->
