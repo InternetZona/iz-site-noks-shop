@@ -20,6 +20,7 @@
     {field name=pagetitle}|strpos:"Посудомоечная машина" !== false ||
     {field name=pagetitle}|strpos:"Микроволновая печь" !== false ||
     {field name=pagetitle}|strpos:"Вытяжка" !== false ||
+    {field name=pagetitle}|strpos:"Сиденье" !== false ||
     {field name=pagetitle}|strpos:"поверхность" !== false}
     <meta name="robots" content="noindex, nofollow">
     {else}
