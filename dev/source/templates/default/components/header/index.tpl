@@ -13,7 +13,6 @@
                     {include file="components/menu/topbar.tpl"}
 
                     <ul class="bar right">
-                        <li class="bar__item hide-on-small-and-down"><a class="holiday" href="{$modx->makeUrl(941)}">Работа в праздники</a></li>
                         <li class="bar__item favorite">
 
                             {$favorite = $smarty.cookies.favorite|json_decode:true}
