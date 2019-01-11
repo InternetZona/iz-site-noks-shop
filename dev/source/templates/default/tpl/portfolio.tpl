@@ -66,9 +66,7 @@
                 {/foreach}
 
                 {if $items}
-
                     {foreach $items as $item}
-
                         <div class="col s12 m6 l4 xl3">
 
                             <div class="card box-item">
@@ -80,18 +78,17 @@
                                     ] assign=thumbImage}
 
                                     <img src="{$thumbImage}" class="responsive-img">
+
                                 </div>
                                 <div class="card-content">
-                                            <span class="card-title">
+                                            <span class="card-title portfolioname">
                                                 {$item.title}
                                             </span>
                                 </div>
                             </div>
 
                         </div>
-
                     {/foreach}
-
                 {/if}
 
             {else}
@@ -101,7 +98,6 @@
                     {$items = $data.images|json_decode:true}
 
                     {foreach $items as $item}
-
                         <div class="col s12 m6 l4 xl3">
 
                             <div class="card box-item">
@@ -111,20 +107,18 @@
                                     "input" => $item.image
                                     ,"options" => "&w=480&h=320&zc=1&aoe=0&far=0&q=80"
                                     ] assign=thumbImage}
-
                                     <img src="{$thumbImage}" class="responsive-img">
+
                                 </div>
                                 <div class="card-content">
-                                            <span class="card-title">
+                                            <span class="card-title portfolioname">
                                                 {$item.title}
                                             </span>
                                 </div>
                             </div>
 
                         </div>
-
                     {/foreach}
-
                 {/foreach}
 
             {/if}
