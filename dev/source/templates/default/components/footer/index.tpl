@@ -12,6 +12,11 @@
             <div class="col s12 m6 l3">
                 {include file="components/menu/index.tpl" title="О нас" ids="6, 18, 17, 19, 17" parent="0" showhidden=1}
                 {include file="components/menu/index.tpl" title="Сотрудничество" ids="222, 223" parent="0"}
+                <div class="menu__title">Выгодные условия</div>
+                <ul class="menu">
+                    <li class="first"><img src="{$template_url}img/tinkoff.png"></li>
+                    <li class="first"><img src="{$template_url}img/halva.png"></li>
+                </ul>
             </div>
             <div class="col s12 m6 l3">
                 <div class="menu__title">Связаться с нами</div>
