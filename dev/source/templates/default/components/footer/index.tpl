@@ -15,7 +15,7 @@
                 <div class="menu__title">Выгодные условия</div>
                 <ul class="menu">
                     <li class="first"><img src="{$template_url}img/tinkoff.png"></li>
-                    <li class="first"><a href="{$modx->makeUrl(943)}"<img src="{$template_url}img/halva.png"></a></li>
+                    <li class="first"><a href="{$modx->makeUrl(943)}"><img src="{$template_url}img/halva.png"></a></li>
                 </ul>
             </div>
             <div class="col s12 m6 l3">
