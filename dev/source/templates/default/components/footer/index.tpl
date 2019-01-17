@@ -20,8 +20,10 @@
             </div>
             <div class="col s12 m6 l3">
                 <div class="menu__title">Связаться с нами</div>
-                <a class="call-phone" href="tel:84952088802">8 (495) 208-88-02</a>
-                <a class="call-phone" href="tel:84951085696">8 (495) 108-56-96</a>
+                <ul>
+                <li><a class="call-phone" href="tel:84952088802">8 (495) 208-88-02</a></li>
+                    <li><a class="call-phone" href="tel:84951085696">8 (495) 108-56-96</a></li>
+                </ul>
                 <ul class="menu">
                     <li><a href="#modal-callback" class="modal-trigger">Заказать обратный звонок</a></li>
                     <li><a href="#modal-feedback" class="modal-trigger">Написать сообщение</a></li>
