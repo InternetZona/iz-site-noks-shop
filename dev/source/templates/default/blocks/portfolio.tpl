@@ -48,6 +48,11 @@
                                             <img src="{$thumbImage}">
                                         </a>
                                     </div>
+                                    <div class="card-content cc2">
+                                            <span class="card-title portfolioname">
+                                                {$data.title}
+                                            </span>
+                                    </div>
                                 </div>
                             </div>
 
