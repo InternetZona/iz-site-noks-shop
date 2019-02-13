@@ -23,9 +23,7 @@
 
         {include file="blocks/request.tpl"}
 
-        {*
-            {include file="blocks/portfolio.tpl"}
-        *}
+        {include file="blocks/portfolio.tpl"}
 
         {include file="blocks/blog.tpl"}
         {include file="blocks/videomaterials.tpl"}

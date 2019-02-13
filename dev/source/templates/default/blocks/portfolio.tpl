@@ -32,26 +32,25 @@
 
             {if $portfolio && is_array($portfolio)}
                 <div id="swiper-portfolio" class="swiper-container swiper-content">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper mp-gallery">
 
                         {foreach $portfolio as $data}
 
                             <div class="swiper-slide center-align">
                                 <div class="card  box-item">
                                     <div class="card-image" style="padding: 8px;">
-                                        <a href="{$result.object.uri}">
+                                        {snippet name="pThumb" params=[
+                                        "input" => $data.image
+                                        ,"options" => "&w=242&h=168&zc=1&aoe=0&far=0&q=70"
+                                        ] assign=thumbImage}
 
-                                            {snippet name="pThumb" params=[
-                                                "input" => $data.image
-                                                ,"options" => "&w=242&h=168&zc=1&aoe=0&far=0&q=70"
-                                            ] assign=thumbImage}
-
+                                        <a href="{$data.image}">
                                             <img src="{$thumbImage}">
-
                                         </a>
                                     </div>
                                 </div>
                             </div>
+
                         {/foreach}
 
                     </div>
