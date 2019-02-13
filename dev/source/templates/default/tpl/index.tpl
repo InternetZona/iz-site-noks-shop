@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="{$template_url}css/izstyle.css?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'css/izstyle.css')}"  media="screen,projection"/>
     <script src="{$template_url}js/jquery-3.3.1.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/jquery-3.3.1.js')}"></script>
+    <script async src="{$template_url}plugins/magnific/js/magnific.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'plugins/magnific/css/magnific.js')}"></script>
+    <link type="text/css" rel="stylesheet" href="{$template_url}plugins/magnific/css/magnific.css?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'plugins/magnific/css/magnific.css')}"  media="screen,projection"/>
     <script async src="{$template_url}js/izscripts.js?{filemtime(MODX_BASE_PATH|cat:$template_url|cat:'js/izscripts.js')}"></script>
     {if {field name=pagetitle}|strpos:"Кухни" !== false ||
     {field name=pagetitle}|strpos:"Кухня" !== false ||
