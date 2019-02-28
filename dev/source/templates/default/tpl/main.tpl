@@ -16,10 +16,8 @@
     <div class="container">
         {include file="blocks/recomendation.tpl"}
         {include file="blocks/events.tpl"}
-        
-        {*
-            {include file="blocks/showroom.tpl"}
-        *}
+
+        {include file="blocks/showroom.tpl"}
 
         {include file="blocks/request.tpl"}
 
