@@ -57,6 +57,8 @@
 
                     {/if}
 
+                    <div class="product__divider"></div>
+
                     {if
                     {field name=pagetitle}|strpos:"Стол" !== false ||
                     {field name=pagetitle}|strpos:"Стул" !== false ||
