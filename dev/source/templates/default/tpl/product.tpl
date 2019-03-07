@@ -59,6 +59,26 @@
 
                     <div class="product__divider"></div>
 
+                    {if
+                    {field name=pagetitle}|strpos:"Стол" !== false ||
+                    {field name=pagetitle}|strpos:"Стул" !== false ||
+                    {field name=pagetitle}|strpos:"Обеденные" !== false ||
+                    {field name=pagetitle}|strpos:"Бытовая техника" !== false ||
+                    {field name=pagetitle}|strpos:"Духовой шкаф" !== false ||
+                    {field name=pagetitle}|strpos:"Посудомоечная машина" !== false ||
+                    {field name=pagetitle}|strpos:"Микроволновая печь" !== false ||
+                    {field name=pagetitle}|strpos:"Вытяжка" !== false ||
+                    {field name=pagetitle}|strpos:"Сиденье" !== false ||
+                    {field name=pagetitle}|strpos:"поверхность" !== false}
+
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            {$price = {tv name=price_discount}|default:{tv name=price}}
+                            <a href="#" class="product__order-btn btn-block" data-id="{field name=id}" data-price="{$price}" onclick="yaCounter49093180.reachGoal('buy');">Купить</a>
+                        </div>
+                    </div>
+                    {/if}
+
                     <div class="row">
 
                         <div class="col s6 pull-s6 m8 offset-m2 pull-m2 valign-wrapper">
