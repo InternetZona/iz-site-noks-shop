@@ -77,7 +77,7 @@
                             <a href="#" class="product__order-btn btn-block" data-id="{field name=id}" data-price="{$price}" onclick="yaCounter49093180.reachGoal('buy');">Купить</a>
                         </div>
                     </div>
-                    {/if}
+                    {else}
 
                     <div class="row">
 
@@ -98,6 +98,7 @@
                         </div>
 
                     </div>
+                    {/if}
                 </div>
             </div>
 
