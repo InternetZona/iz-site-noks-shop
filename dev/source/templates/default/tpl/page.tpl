@@ -32,7 +32,7 @@
                 <i class="icon icon--ruler"></i>
                 Заказать замер</a>
         {/if}
-
+        {if {field name=id} == 6}<div class="col l12"><a href="{$modx->makeUrl(966)}">Вакансии ООО "НОКС МЕБЕЛЬ</a></div>{/if}
 </div>
 </div>
 {/block}
