@@ -22,7 +22,7 @@
                 {if $colorsList}
                     <li class="tab col s12 s3"><a href="#tab-colors">Цветовые решения</a></li>
                 {/if}
-                {if $equipList}
+                {if !$checkequip && $equipList}
                     <li class="tab col s12 s3"><a href="#tab-options">Комплектация и цены</a></li>
                 {/if}
                 {if !$checkequip && $equipBoardList}
@@ -70,7 +70,7 @@
                 </div>
             </div>
         {/if}
-        {if $equipList}
+        {if !$checkequip && $equipList}
             <div id="tab-options" class="tab__item col s12">
                 <div class="product-equip">
                     <div class="product-equip__header">
