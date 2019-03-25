@@ -4,6 +4,7 @@
 {assign var=colorsList value={tv name=colors}|json_decode:true}
 {assign var=equipList value={tv name=equip}|json_decode:true}
 {assign var=equipBoardList value={tv name=equipBoard}|json_decode:true}
+{assign var=checkequip value={tv name=checkequip}}
 
 {if $content || $fasadeList || $colorsList || $equipList || $doorsList || $equipBoardList}
     <div class="row product-tabs">
@@ -24,7 +25,7 @@
                 {if $equipList}
                     <li class="tab col s12 s3"><a href="#tab-options">Комплектация и цены</a></li>
                 {/if}
-                {if $equipBoardList}
+                {if !$checkequip && $equipBoardList}
                     <li class="tab col s12 s3"><a href="#tab-options-board">Комплектация и цены</a></li>
                 {/if}
             </ul>
@@ -144,7 +145,7 @@
             </div>
         {/if}
 
-        {if $equipBoardList}
+        {if !$checkequip && $equipBoardList}
             <div id="tab-options-board" class="tab__item col s12">
                 <div class="product-equip">
                     <div class="product-equip__header">
